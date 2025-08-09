@@ -35,6 +35,11 @@
           borderRadius: {
             '2.5xl': '1.25rem',
           },
+          // Ajout de la propriété textShadow pour une meilleure lisibilité
+          textShadow: {
+            DEFAULT: '0 2px 8px rgba(0, 0, 0, 0.7)',
+            sm: '0 1px 4px rgba(0, 0, 0, 0.6)',
+          },
           keyframes: {
             floaty: { '0%,100%': { transform: 'translateY(0)' }, '50%': { transform: 'translateY(-8px)' } },
             fadeUp: { from: { opacity: 0, transform: 'translateY(16px)' }, to: { opacity: 1, transform: 'translateY(0)' } },
@@ -92,41 +97,39 @@
 </div>
 </header>
 
-<!-- HERO (Version "Image en fond") -->
+<!-- HERO (Version "Image en fond" avec lisibilité améliorée) -->
 <section class="pt-20 lg:pt-24" id="hero">
   <div class="container">
-    <!-- 1. Conteneur principal avec position relative pour superposer les éléments -->
     <div class="relative h-[75vh] min-h-[500px] max-h-[700px] flex flex-col items-center justify-center rounded-2.5xl overflow-hidden shadow-soft">
       
-      <!-- 2. Image de fond -->
+      <!-- Image de fond (inchangée) -->
       <img 
         src="./assets/hero/hero-harmonie-interieure.webp" 
         alt="Salon lumineux et végétal, un intérieur harmonieux" 
         class="absolute inset-0 w-full h-full object-cover -z-20"
       />
       
-      <!-- 3. Superposition (overlay) pour garantir la lisibilité du texte -->
-      <div class="absolute inset-0 bg-gradient-to-t from-charcoal/60 via-charcoal/20 to-transparent -z-10"></div>
+      <!-- 1. Superposition (overlay) RENFORCÉE pour garantir la lisibilité -->
+      <div class="absolute inset-0 bg-gradient-to-t from-charcoal/80 via-charcoal/40 to-charcoal/10 -z-10"></div>
 
-      <!-- 4. Contenu textuel centré par-dessus -->
+      <!-- Contenu textuel centré par-dessus -->
       <div class="relative text-center text-white px-4">
-        <h1 class="font-display text-4xl/[1.1] sm:text-5xl lg:text-6xl">
+        <!-- 2. Ajout d'une ombre portée (text-shadow) pour "décoller" le texte -->
+        <h1 class="font-display text-4xl/[1.1] sm:text-5xl lg:text-6xl text-shadow">
           Créez un intérieur qui vous ressemble,<br class="hidden sm:block"/> sans les doutes
         </h1>
-        <p class="mt-5 text-[17px] leading-7 text-cream/90 max-w-2xl mx-auto">
+        <p class="mt-5 text-[17px] leading-7 text-cream/95 max-w-2xl mx-auto text-shadow-sm">
           Conseils en décoration et accompagnement pour les primo-accédants et les rénovations à Annecy. Je vous aide à transformer votre espace en un véritable cocon de bien-être.
         </p>
 
-        <!-- Boutons adaptés pour le fond sombre -->
+        <!-- Boutons (inchangés, le contraste est maintenant bon) -->
         <div class="mt-8 flex flex-col sm:flex-row gap-4 sm:gap-5 items-center justify-center">
-          <!-- Primaire (style inchangé, fonctionne bien) -->
           <a class="ring-1 ring-black/5 hover:bg-primaryDark group relative inline-flex items-center gap-3 rounded-[40px] px-7 py-3.5 bg-primary text-white font-semibold transition-all duration-300 will-change-transform shadow-[0_8px_24px_rgba(44,36,33,.25)] hover:-translate-y-0.5 hover:shadow-[0_14px_36px_rgba(44,36,33,.30)] active:translate-y-0 focus:outline-none focus-visible:ring-4 focus-visible:ring-primary/25" href="#services">
             <span class="relative z-10">Découvrir mes accompagnements</span>
             <svg aria-hidden="true" class="relative z-10 transition-transform group-hover:translate-x-0.5" fill="none" height="18" viewbox="0 0 24 24" width="18">
               <path d="M5 12h14M13 5l7 7-7 7" stroke="currentColor" stroke-linecap="round" stroke-width="1.5"></path>
             </svg>
           </a>
-          <!-- Secondaire (style "fantôme" pour un meilleur contraste) -->
           <a class="group relative inline-flex items-center gap-3 rounded-[40px] px-7 py-3.5 bg-white/10 text-white ring-1 ring-white/50 backdrop-blur-sm transition-all duration-300 hover:bg-white/20 hover:ring-white focus:outline-none focus-visible:ring-4 focus-visible:ring-white/30" href="#contact">
             <span>Réserver un appel découverte</span>
             <svg aria-hidden="true" class="transition-transform group-hover:translate-x-0.5" fill="none" height="18" viewbox="0 0 24 24" width="18">
@@ -139,7 +142,7 @@
   </div>
 </section>
 
-<!-- Réalisations -->
+<!-- Le reste du document... -->
 <section class="mt-20 sm:mt-24" id="realisations">
 <div class="container">
 <h2 class="font-display text-3xl sm:text-4xl text-center text-primary">Mes Réalisations</h2>
