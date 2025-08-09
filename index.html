@@ -67,8 +67,13 @@
 <body class="bg-cream text-charcoal font-sans antialiased selection:bg-sage/60 selection:text-charcoal">
 <!-- Barre sticky -->
 <header class="fixed inset-x-0 top-0 z-50 backdrop-blur supports-[backdrop-filter]:bg-cream/70 border-b border-sage/50" id="top">
-<nav class="container flex items-center justify-between h-16">
-<a class="group gap-3 items-center gap-2 flex inline-flex" href="#hero"><img alt="Harmonie Intérieure — logo" class="h-14 md:h-12 w-auto" decoding="async" loading="eager" src="./assets/logo/logo-header.png"/><span class="sr-only">Harmonie Intérieure</span></a>
+<!-- MODIFICATION ICI : h-16 est devenu h-20 -->
+<nav class="container flex items-center justify-between h-20">
+<a class="group gap-3 items-center gap-2 flex inline-flex" href="#hero">
+<!-- MODIFICATION ICI : h-14 md:h-12 est devenu h-16 md:h-14 -->
+<img alt="Harmonie Intérieure — logo" class="h-16 md:h-14 w-auto" decoding="async" loading="eager" src="./assets/logo/logo-header.png"/>
+<span class="sr-only">Harmonie Intérieure</span>
+</a>
 <button aria-label="Ouvrir le menu" class="lg:hidden p-2 rounded-md hover:bg-sage/40 focus-outline" id="burger">
 <svg class="stroke-charcoal" fill="none" height="22" viewbox="0 0 24 24" width="22"><path d="M4 6h16M4 12h16M4 18h16" stroke-linecap="round" stroke-width="1.5"></path></svg>
 </button>
