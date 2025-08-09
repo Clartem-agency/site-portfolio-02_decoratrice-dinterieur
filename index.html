@@ -50,7 +50,7 @@
   <style>
     :root{scroll-behavior:smooth}
     /* utilitaires pour les textes à dégradé, fidèles au style aperçu */
-    .gradient-title{background:linear-gradient(90deg,#2c2421 0%,#7c706a 30%,#98b398 65%,#d1e0d1 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
+.gradient-title{background:linear-gradient(90deg,#7e9f83 0%, #98b398 45%, #d1e0d1 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
     .gradient-accent{background:linear-gradient(90deg,#d7a542 0%,#f5f3ef 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
     /* corrections focus visibles et élégantes */
     .focus-outline:focus{outline:3px solid #98b3983b; outline-offset:2px}
@@ -146,18 +146,25 @@
           <li class="inline-flex items-center gap-2"><span class="h-1.5 w-1.5 rounded-full bg-primary"></span>Annecy & alentours</li>
         </ul>
       </div>
-      <div class="order-1 lg:order-2 relative">
-        <div class="relative aspect-[4/3] rounded-2.5xl overflow-hidden shadow-soft ring-1 ring-sage/60">
-          <!-- image décorative similaire à la capture (canapé + plante) -->
-          <img class="h-full w-full object-cover" src="https://images.unsplash.com/photo-1505691938895-1758d7feb511?q=80&w=1600&auto=format&fit=crop" alt="Salon lumineux et végétal">
-          <!-- badge rebondissant -->
-          <div class="absolute -right-3 -bottom-3 sm:right-5 sm:-bottom-5">
-            <div class="animate-floaty rounded-2xl bg-primary text-white px-4 py-2 shadow-card flex items-center gap-2">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M12 22s8-4 8-10a8 8 0 1 0-16 0c0 6 8 10 8 10Z" stroke="#fff" stroke-width="1.5"/><circle cx="12" cy="12" r="3" fill="#fff"/></svg>
-              <span class="text-sm font-medium">Appel découverte offert</span>
-            </div>
-          </div>
-        </div>
+      <div class="order-1 lg:order-2 relative pb-10 sm:pb-12">
+  <!-- 1) L'image seule dans le bloc overflow-hidden -->
+  <div class="rounded-2.5xl overflow-hidden shadow-soft ring-1 ring-sage/60">
+    <img class="block w-full h-auto object-cover aspect-[4/3]"
+         src="https://images.unsplash.com/photo-1505691938895-1758d7feb511?q=80&w=1600&auto=format&fit=crop"
+         alt="Salon lumineux et végétal">
+  </div>
+
+  <!-- 2) Le badge sort de l'image + animation -->
+  <div class="absolute right-2 sm:right-6 -bottom-4 sm:-bottom-6 z-10">
+    <div class="animate-floaty rounded-2xl bg-primary text-white px-4 py-2 shadow-card flex items-center gap-2">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <path d="M12 22s8-4 8-10a8 8 0 1 0-16 0c0 6 8 10 8 10Z" stroke="#fff" stroke-width="1.5"/>
+        <circle cx="12" cy="12" r="3" fill="#fff"/>
+      </svg>
+      <span class="text-sm font-medium">Appel découverte offert</span>
+    </div>
+  </div>
+</div>
       </div>
     </div>
   </section>
