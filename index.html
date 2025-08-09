@@ -92,67 +92,50 @@
 </div>
 </header>
 
-<!-- HERO (Version responsive améliorée) -->
-<section class="pt-28 lg:pt-32" id="hero">
-  <div class="container grid lg:grid-cols-2 gap-10 items-center">
-    
-    <!-- 1. Ordre inversé : le bloc de texte est maintenant le premier élément -->
-    <div class="text-center lg:text-left">
-      <!-- 2. Centrage du texte sur mobile/tablette, aligné à gauche sur desktop -->
-      <h1 class="font-display text-4xl/[1.1] sm:text-5xl lg:text-6xl gradient-title">
-        Créez un intérieur qui vous ressemble,<br class="hidden sm:block"/> sans les doutes
-      </h1>
-      <p class="mt-5 text-[17px] leading-7 text-taupe max-w-xl mx-auto lg:mx-0">
-        Conseils en décoration et accompagnement pour les primo-accédants et les rénovations à Annecy. Je vous aide à transformer votre espace en un véritable cocon de bien-être.
-      </p>
+<!-- HERO (Version "Image en fond") -->
+<section class="pt-20 lg:pt-24" id="hero">
+  <div class="container">
+    <!-- 1. Conteneur principal avec position relative pour superposer les éléments -->
+    <div class="relative h-[75vh] min-h-[500px] max-h-[700px] flex flex-col items-center justify-center rounded-2.5xl overflow-hidden shadow-soft">
+      
+      <!-- 2. Image de fond -->
+      <img 
+        src="./assets/hero/hero-harmonie-interieure.webp" 
+        alt="Salon lumineux et végétal, un intérieur harmonieux" 
+        class="absolute inset-0 w-full h-full object-cover -z-20"
+      />
+      
+      <!-- 3. Superposition (overlay) pour garantir la lisibilité du texte -->
+      <div class="absolute inset-0 bg-gradient-to-t from-charcoal/60 via-charcoal/20 to-transparent -z-10"></div>
 
-      <!-- 3. Conteneur des boutons centré sur mobile, aligné à gauche sur desktop -->
-      <div class="mt-7 flex flex-col sm:flex-row gap-4 sm:gap-5 items-center justify-center lg:justify-start">
-        <!-- Primaire -->
-        <a class="ring-1 ring-black/5 hover:bg-[#4a6d5a] group relative inline-flex items-center gap-3 rounded-[40px] px-7 py-3.5 bg-[#557f6a] text-white font-semibold transition-all duration-300 will-change-transform shadow-[0_8px_24px_rgba(44,36,33,.25)] hover:-translate-y-0.5 hover:shadow-[0_14px_36px_rgba(44,36,33,.30)] active:translate-y-0 focus:outline-none focus-visible:ring-4 focus-visible:ring-primary/25" href="#services">
-          <span class="relative z-10">Découvrir mes accompagnements</span>
-          <svg aria-hidden="true" class="relative z-10 transition-transform group-hover:translate-x-0.5" fill="none" height="18" viewbox="0 0 24 24" width="18">
-            <path d="M5 12h14M13 5l7 7-7 7" stroke="currentColor" stroke-linecap="round" stroke-width="1.5"></path>
-          </svg>
-          <span class="pointer-events-none absolute inset-0 rounded-[40px] bg-[linear-gradient(180deg,rgba(255,255,255,.08),rgba(255,255,255,0))]"></span>
-          <span class="pointer-events-none absolute -inset-x-2 inset-y-3 -z-10 rounded-[44px] blur-xl opacity-80 bg-[radial-gradient(closest-side,rgba(44,36,33,.18),transparent)]"></span>
-        </a>
-        <!-- Secondaire -->
-        <a class="group relative inline-flex items-center gap-3 rounded-[40px] px-7 py-3.5 bg-white text-charcoal ring-1 ring-sage/70 transition-all duration-300 shadow-[0_6px_18px_rgba(152,179,152,.18)] hover:bg-sage/10 hover:shadow-[0_12px_28px_rgba(152,179,152,.25)] focus:outline-none focus-visible:ring-4 focus-visible:ring-primary/25" href="#contact">
-          <span>Réserver un appel découverte</span>
-          <svg aria-hidden="true" class="transition-transform group-hover:translate-x-0.5" fill="none" height="18" viewbox="0 0 24 24" width="18">
-            <path d="M5 12h14M13 5l7 7-7 7" stroke="currentColor" stroke-linecap="round" stroke-width="1.5"></path>
-          </svg>
-        </a>
-      </div>
+      <!-- 4. Contenu textuel centré par-dessus -->
+      <div class="relative text-center text-white px-4">
+        <h1 class="font-display text-4xl/[1.1] sm:text-5xl lg:text-6xl">
+          Créez un intérieur qui vous ressemble,<br class="hidden sm:block"/> sans les doutes
+        </h1>
+        <p class="mt-5 text-[17px] leading-7 text-cream/90 max-w-2xl mx-auto">
+          Conseils en décoration et accompagnement pour les primo-accédants et les rénovations à Annecy. Je vous aide à transformer votre espace en un véritable cocon de bien-être.
+        </p>
 
-      <!-- 4. Garanties centrées sur mobile -->
-      <ul class="mt-6 flex flex-wrap gap-x-6 gap-y-2 text-sm text-taupe justify-center lg:justify-start">
-        <li class="inline-flex items-center gap-2"><span class="h-1.5 w-1.5 rounded-full bg-primary"></span>Forfaits clairs</li>
-        <li class="inline-flex items-center gap-2"><span class="h-1.5 w-1.5 rounded-full bg-primary"></span>Réponses en 24h</li>
-        <li class="inline-flex items-center gap-2"><span class="h-1.5 w-1.5 rounded-full bg-primary"></span>Annecy &amp; alentours</li>
-      </ul>
-    </div>
-
-    <!-- Colonne image HERO — badge à cheval -->
-    <!-- 5. Ajout d'un espace au-dessus de l'image sur mobile (mt-12), qui disparaît sur desktop (lg:mt-0) -->
-    <div class="relative pb-10 sm:pb-12 mt-12 lg:mt-0">
-      <div class="relative rounded-2.5xl shadow-soft ring-1 ring-sage/60">
-        <!-- coins arrondis sur l'image, pas d'overflow-hidden => badge non rogné -->
-        <img alt="Salon lumineux et végétal" class="block w-full h-auto object-cover rounded-2.5xl aspect-[4/3]" src="./assets/hero/hero-harmonie-interieure.webp"/>
-        <!-- wrapper positionné sur la bordure basse -->
-        <div class="absolute right-2 sm:right-6 bottom-0 translate-y-1/2 z-10">
-          <div class="animate-floaty rounded-2xl bg-[#557f6a] text-white px-4 py-2 shadow-card flex items-center gap-2">
-            <svg aria-hidden="true" fill="none" height="18" viewbox="0 0 24 24" width="18">
-              <path d="M12 22s8-4 8-10a8 8 0 1 0-16 0c0 6 8 10 8 10Z" stroke="#fff" stroke-width="1.5"></path>
-              <circle cx="12" cy="12" fill="#fff" r="3"></circle>
+        <!-- Boutons adaptés pour le fond sombre -->
+        <div class="mt-8 flex flex-col sm:flex-row gap-4 sm:gap-5 items-center justify-center">
+          <!-- Primaire (style inchangé, fonctionne bien) -->
+          <a class="ring-1 ring-black/5 hover:bg-primaryDark group relative inline-flex items-center gap-3 rounded-[40px] px-7 py-3.5 bg-primary text-white font-semibold transition-all duration-300 will-change-transform shadow-[0_8px_24px_rgba(44,36,33,.25)] hover:-translate-y-0.5 hover:shadow-[0_14px_36px_rgba(44,36,33,.30)] active:translate-y-0 focus:outline-none focus-visible:ring-4 focus-visible:ring-primary/25" href="#services">
+            <span class="relative z-10">Découvrir mes accompagnements</span>
+            <svg aria-hidden="true" class="relative z-10 transition-transform group-hover:translate-x-0.5" fill="none" height="18" viewbox="0 0 24 24" width="18">
+              <path d="M5 12h14M13 5l7 7-7 7" stroke="currentColor" stroke-linecap="round" stroke-width="1.5"></path>
             </svg>
-            <span class="text-sm font-medium">Appel découverte offert</span>
-          </div>
+          </a>
+          <!-- Secondaire (style "fantôme" pour un meilleur contraste) -->
+          <a class="group relative inline-flex items-center gap-3 rounded-[40px] px-7 py-3.5 bg-white/10 text-white ring-1 ring-white/50 backdrop-blur-sm transition-all duration-300 hover:bg-white/20 hover:ring-white focus:outline-none focus-visible:ring-4 focus-visible:ring-white/30" href="#contact">
+            <span>Réserver un appel découverte</span>
+            <svg aria-hidden="true" class="transition-transform group-hover:translate-x-0.5" fill="none" height="18" viewbox="0 0 24 24" width="18">
+              <path d="M5 12h14M13 5l7 7-7 7" stroke="currentColor" stroke-linecap="round" stroke-width="1.5"></path>
+            </svg>
+          </a>
         </div>
       </div>
     </div>
-    
   </div>
 </section>
 
