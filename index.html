@@ -489,42 +489,106 @@
       })
     });
   </script>
-<div class="fixed inset-0 z-50 hidden items-center justify-center bg-black/70 p-4" id="lightbox-overlay"><button aria-label="Fermer l'image" class="absolute top-4 right-4 inline-flex h-10 w-10 items-center justify-center rounded-full bg-white/90 text-[#2c2421] shadow ring-1 ring-black/5 hover:bg-white transition" type="button">×</button><img alt="" class="max-h-[90vh] max-w-[90vw] rounded-2xl shadow-2xl object-contain" decoding="async" id="lightbox-img" loading="eager"/></div><script id="lightbox-script">
+<div class="inset-0 justify-center z-50 items-center p-4 hidden flex fixed bg-black/70" id="lightbox-overlay"><button aria-label="Fermer l'image" class="absolute top-4 right-4 inline-flex h-10 w-10 items-center justify-center rounded-full bg-white/90 text-[#2c2421] shadow ring-1 ring-black/5 hover:bg-white transition" type="button">×</button><img alt="" class="max-h-[90vh] max-w-[90vw] rounded-2xl shadow-2xl object-contain will-change-transform" decoding="async" id="lightbox-img" loading="eager"/><button class="absolute top-1/2 -translate-y-1/2 inline-flex h-12 w-12 items-center justify-center rounded-full bg-white/90 text-[#2c2421] shadow ring-1 ring-black/5 hover:bg-white transition left-4" data-dir="prev" type="button">‹</button><button class="absolute top-1/2 -translate-y-1/2 inline-flex h-12 w-12 items-center justify-center rounded-full bg-white/90 text-[#2c2421] shadow ring-1 ring-black/5 hover:bg-white transition right-4" data-dir="next" type="button">›</button></div><script id="lightbox-script">
 document.addEventListener('DOMContentLoaded', function () {
   const overlay = document.getElementById('lightbox-overlay');
   const img = document.getElementById('lightbox-img');
-  const close = overlay.querySelector('button');
+  const btnClose = overlay.querySelector('button[aria-label]');
+  const btnPrev = overlay.querySelector('button[data-dir="prev"]');
+  const btnNext = overlay.querySelector('button[data-dir="next"]');
+
+  const cards = Array.from(document.querySelectorAll('a[data-lightbox-src]'));
+  let currentIndex = -1;
+
+  function openLightboxByIndex(index) {
+    if (index < 0 || index >= cards.length) return;
+    currentIndex = index;
+    const a = cards[index];
+    openLightbox(a.getAttribute('data-lightbox-src'), a.getAttribute('data-lightbox-alt') || '');
+  }
 
   function openLightbox(src, alt) {
-    if (!src) return;
     img.src = src;
     img.alt = alt || '';
+    // reset transform
+    scale = 1; translateX = 0; translateY = 0; applyTransform();
     overlay.classList.remove('hidden');
     document.documentElement.classList.add('overflow-y-hidden');
   }
 
   function closeLightbox() {
     overlay.classList.add('hidden');
-    img.removeAttribute('src');
     document.documentElement.classList.remove('overflow-y-hidden');
+    img.removeAttribute('src');
   }
 
-  document.querySelectorAll('a[data-lightbox-src]').forEach(a => {
+  // --- Zoom & Pan ---
+  let scale = 1, translateX = 0, translateY = 0;
+  const MIN_SCALE = 1, MAX_SCALE = 4, STEP = 0.1;
+
+  function applyTransform() {
+    img.style.transform = `translate(${translateX}px, ${translateY}px) scale(${scale})`;
+  }
+
+  overlay.addEventListener('wheel', (e) => {
+    if (!img.src) return;
+    e.preventDefault();
+    const delta = e.deltaY < 0 ? 1 : -1;
+    let newScale = scale + delta * STEP;
+    newScale = Math.min(MAX_SCALE, Math.max(MIN_SCALE, newScale));
+    // zoom relative to center of image container (simple approach)
+    // adjust translation proportionally to keep image centered visually
+    const factor = newScale / scale;
+    translateX *= factor;
+    translateY *= factor;
+    scale = newScale;
+    applyTransform();
+  }, { passive: false });
+
+  let isDragging = false, startX = 0, startY = 0;
+  overlay.addEventListener('mousedown', (e) => {
+    // allow drag only when image is zoomed in
+    if (scale <= 1 || e.target !== img) return;
+    isDragging = true;
+    startX = e.clientX - translateX;
+    startY = e.clientY - translateY;
+  });
+  window.addEventListener('mousemove', (e) => {
+    if (!isDragging) return;
+    translateX = e.clientX - startX;
+    translateY = e.clientY - startY;
+    applyTransform();
+  });
+  window.addEventListener('mouseup', () => { isDragging = false; });
+
+  // --- Navigation ---
+  function showPrev() { openLightboxByIndex((currentIndex - 1 + cards.length) % cards.length); }
+  function showNext() { openLightboxByIndex((currentIndex + 1) % cards.length); }
+
+  btnPrev.addEventListener('click', (e) => { e.stopPropagation(); showPrev(); });
+  btnNext.addEventListener('click', (e) => { e.stopPropagation(); showNext(); });
+
+  document.addEventListener('keydown', (e) => {
+    if (overlay.classList.contains('hidden')) return;
+    if (e.key === 'Escape') closeLightbox();
+    if (e.key === 'ArrowLeft') showPrev();
+    if (e.key === 'ArrowRight') showNext();
+  });
+
+  // open from cards
+  cards.forEach((a, i) => {
     a.addEventListener('click', (e) => {
       e.preventDefault();
-      const src = a.getAttribute('data-lightbox-src') || (a.querySelector('img') && a.querySelector('img').src);
-      const alt = a.getAttribute('data-lightbox-alt') || (a.querySelector('img') && a.querySelector('img').alt) || '';
-      openLightbox(src, alt);
+      openLightboxByIndex(i);
     });
   });
 
-  close.addEventListener('click', closeLightbox);
+  // Close overlay on backdrop click
   overlay.addEventListener('click', (e) => {
+    // only close if click is on the overlay, not on the image or buttons
     if (e.target === overlay) closeLightbox();
   });
-  document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape') closeLightbox();
-  });
+  btnClose.addEventListener('click', closeLightbox);
 });
 </script></body>
 </html>
