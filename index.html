@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-<meta charset="utf--8"/>
-<meta content="width=device-width, initial-scale=1" name="viewport"/>
-<title>Chloé Dubois – Décoratrice d’Intérieur à Annecy | Harmonie Intérieure</title>
-<meta content="Conseils en décoration &amp; accompagnement pour primo-accédants et rénovations à Annecy. Coaching déco, projets complets, suivi de chantier. Appel découverte offert." name="description"/>
-<link href="https://fonts.googleapis.com" rel="preconnect"/>
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&amp;family=Poppins:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
-<script src="https://cdn.tailwindcss.com"></script>
-<script>
+  <meta charset="utf--8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>Chloé Dubois – Décoratrice d’Intérieur à Annecy | Harmonie Intérieure</title>
+  <meta content="Conseils en décoration &amp; accompagnement pour primo-accédants et rénovations à Annecy. Coaching déco, projets complets, suivi de chantier. Appel découverte offert." name="description"/>
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&amp;family=Poppins:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
     tailwind.config = {
       theme: {
         container: { center: true, padding: { DEFAULT: '1rem', lg: '2rem' } },
@@ -35,7 +35,6 @@
           borderRadius: {
             '2.5xl': '1.25rem',
           },
-          // Ajout de la propriété textShadow pour une meilleure lisibilité
           textShadow: {
             DEFAULT: '0 2px 8px rgba(0, 0, 0, 0.7)',
             sm: '0 1px 4px rgba(0, 0, 0, 0.6)',
@@ -52,470 +51,482 @@
       }
     }
   </script>
-<style>
+  <style>
     :root{scroll-behavior:smooth}
-    /* Titre 100% vert */
     .gradient-title{
       background:linear-gradient(90deg,#7e9f83 0%, #98b398 45%, #d1e0d1 100%);
       -webkit-background-clip:text;background-clip:text;color:transparent
     }
     .gradient-accent{background:linear-gradient(90deg,#d7a542 0%,#f5f3ef 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
-    /* focus visibles */
     .focus-outline:focus{outline:3px solid #98b3983b; outline-offset:2px}
   </style>
-<link href="./assets/logo/favicon-32.png" rel="icon" sizes="32x32" type="image/png"/><link href="./assets/logo/favicon-192.png" rel="icon" sizes="192x192" type="image/png"/><link href="./assets/logo/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"/><meta content="#ffffff" name="theme-color"/></head>
+  <link href="./assets/logo/favicon-32.png" rel="icon" sizes="32x32" type="image/png"/>
+  <link href="./assets/logo/favicon-192.png" rel="icon" sizes="192x192" type="image/png"/>
+  <link href="./assets/logo/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"/>
+  <meta content="#ffffff" name="theme-color"/>
+</head>
 <body class="bg-cream text-charcoal font-sans antialiased selection:bg-sage/60 selection:text-charcoal">
-<!-- Barre sticky -->
-<header class="fixed inset-x-0 top-0 z-50 backdrop-blur supports-[backdrop-filter]:bg-cream/70 border-b border-sage/50" id="top">
-<!-- MODIFICATION ICI : h-16 est devenu h-20 -->
-<nav class="container flex items-center justify-between h-20">
-<a class="group gap-3 items-center gap-2 flex inline-flex" href="#hero">
-<!-- MODIFICATION ICI : h-14 md:h-12 est devenu h-16 md:h-14 -->
-<img alt="Harmonie Intérieure — logo" class="h-16 md:h-14 w-auto" decoding="async" loading="eager" src="./assets/logo/logo-header.png"/>
-<span class="sr-only">Harmonie Intérieure</span>
-</a>
-<button aria-label="Ouvrir le menu" class="lg:hidden p-2 rounded-md hover:bg-sage/40 focus-outline" id="burger">
-<svg class="stroke-charcoal" fill="none" height="22" viewbox="0 0 24 24" width="22"><path d="M4 6h16M4 12h16M4 18h16" stroke-linecap="round" stroke-width="1.5"></path></svg>
-</button>
-<ul class="hidden lg:flex items-center gap-7" id="menu">
-<li><a class="hover:text-primary transition-colors" href="#realisations">Réalisations</a></li>
-<li><a class="hover:text-primary transition-colors" href="#services">Services</a></li>
-<li><a class="hover:text-primary transition-colors" href="#histoire">À propos</a></li>
-<li><a class="hover:text-primary transition-colors" href="#faq">FAQ</a></li>
-<li>
-<a class="ring-1 ring-black/5 focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[#557f6a]/60 inline-flex items-center gap-2 rounded-full bg-[#557f6a] text-white px-5 py-2.5 shadow-soft hover:bg-[#4a6d5a] transition-all focus-outline" href="#contact">
-<svg fill="none" height="18" viewbox="0 0 24 24" width="18"><path d="M21 10v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V10" stroke="currentColor" stroke-width="1.5"></path><path d="M3 7l8.16 5.1c.52.33 1.16.33 1.68 0L21 7" stroke="currentColor" stroke-linecap="round" stroke-width="1.5"></path></svg>
+
+  <!-- Barre sticky -->
+  <header class="fixed inset-x-0 top-0 z-50 backdrop-blur supports-[backdrop-filter]:bg-cream/70 border-b border-sage/50" id="top">
+    <nav class="container flex items-center justify-between h-20">
+      <a class="group gap-3 items-center gap-2 flex inline-flex" href="#hero">
+        <img alt="Harmonie Intérieure — logo" class="h-16 md:h-14 w-auto" decoding="async" loading="eager" src="./assets/logo/logo-header.png"/>
+        <span class="sr-only">Harmonie Intérieure</span>
+      </a>
+      <button aria-label="Ouvrir le menu" class="lg:hidden p-2 rounded-md hover:bg-sage/40 focus-outline" id="burger">
+        <svg class="stroke-charcoal" fill="none" height="22" viewBox="0 0 24 24" width="22">
+          <path d="M4 6h16M4 12h16M4 18h16" stroke-linecap="round" stroke-width="1.5"></path>
+        </svg>
+      </button>
+      <ul class="hidden lg:flex items-center gap-7" id="menu">
+        <li><a class="hover:text-primary transition-colors" href="#realisations">Réalisations</a></li>
+        <li><a class="hover:text-primary transition-colors" href="#services">Services</a></li>
+        <li><a class="hover:text-primary transition-colors" href="#histoire">À propos</a></li>
+        <li><a class="hover:text-primary transition-colors" href="#faq">FAQ</a></li>
+        <li>
+          <a class="ring-1 ring-black/5 focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[#557f6a]/60 inline-flex items-center gap-2 rounded-full bg-[#557f6a] text-white px-5 py-2.5 shadow-soft hover:bg-[#4a6d5a] transition-all focus-outline" href="#contact">
+            <svg fill="none" height="18" viewBox="0 0 24 24" width="18">
+              <path d="M21 10v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V10" stroke="currentColor" stroke-width="1.5"></path>
+              <path d="M3 7l8.16 5.1c.52.33 1.16.33 1.68 0L21 7" stroke="currentColor" stroke-linecap="round" stroke-width="1.5"></path>
+            </svg>
             Prendre RDV
           </a>
-</li>
-</ul>
-</nav>
-<!-- menu mobile -->
-<div class="lg:hidden hidden border-t border-sage/60 bg-cream/95" id="drawer">
-<div class="container py-4 space-y-3">
-<a class="block py-2 hover:text-primary" href="#realisations">Réalisations</a>
-<a class="block py-2 hover:text-primary" href="#services">Services</a>
-<a class="block py-2 hover:text-primary" href="#histoire">À propos</a>
-<a class="block py-2 hover:text-primary" href="#faq">FAQ</a>
-<a class="ring-1 ring-black/5 focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[#557f6a]/60 inline-flex items-center gap-2 rounded-full bg-[#557f6a] text-white px-5 py-2.5 shadow-soft hover:bg-[#4a6d5a] transition-colors" href="#contact">Prendre RDV</a>
-</div>
-</div>
-</header>
+        </li>
+      </ul>
+    </nav>
+    <!-- menu mobile -->
+    <div class="lg:hidden hidden border-t border-sage/60 bg-cream/95" id="drawer">
+      <div class="container py-4 space-y-3">
+        <a class="block py-2 hover:text-primary" href="#realisations">Réalisations</a>
+        <a class="block py-2 hover:text-primary" href="#services">Services</a>
+        <a class="block py-2 hover:text-primary" href="#histoire">À propos</a>
+        <a class="block py-2 hover:text-primary" href="#faq">FAQ</a>
+        <a class="ring-1 ring-black/5 focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[#557f6a]/60 inline-flex items-center gap-2 rounded-full bg-[#557f6a] text-white px-5 py-2.5 shadow-soft hover:bg-[#4a6d5a] transition-colors" href="#contact">Prendre RDV</a>
+      </div>
+    </div>
+  </header>
 
-<!-- HERO (Version "Image en fond" avec lisibilité améliorée) -->
-<section class="pt-20 lg:pt-24" id="hero">
-  <div class="container">
-    <div class="relative h-[75vh] min-h-[500px] max-h-[700px] flex flex-col items-center justify-center rounded-2.5xl overflow-hidden shadow-soft">
-      
-      <!-- Image de fond (inchangée) -->
-      <img 
-        src="./assets/hero/hero-harmonie-interieure.webp" 
-        alt="Salon lumineux et végétal, un intérieur harmonieux" 
-        class="absolute inset-0 w-full h-full object-cover -z-20"
-      />
-      
-      <!-- Superposition (overlay) changée pour un fond clair et uniforme pour une meilleure lisibilité -->
-      <div class="absolute inset-0 bg-cream/60 -z-10"></div>
-
-      <!-- Contenu textuel centré par-dessus -->
-      <div class="relative text-center text-charcoal px-4">
-        
-        <!-- Titre avec couleurs spécifiques, maintenant lisible -->
-        <h1 class="font-display text-4xl/[1.1] sm:text-5xl lg:text-6xl text-charcoal">
-          Créez un intérieur qui vous ressemble,<br class="hidden sm:block"/> <span class="text-primary">sans les doutes</span>
-        </h1>
-        
-        <!-- Paragraphe avec couleur adaptée au nouveau fond -->
-        <p class="mt-5 text-[17px] leading-7 text-taupe max-w-2xl mx-auto">
-          Conseils en décoration et accompagnement pour les primo-accédants et les rénovations à Annecy. Je vous aide à transformer votre espace en un véritable cocon de bien-être.
-        </p>
-
-        <!-- Boutons adaptés au fond clair -->
-        <div class="mt-8 flex flex-col sm:flex-row gap-4 sm:gap-5 items-center justify-center">
-          <!-- MODIFICATION: Bouton principal rendu plus foncé pour un meilleur contraste -->
-          <a class="ring-1 ring-black/5 group relative inline-flex items-center gap-3 rounded-[40px] px-7 py-3.5 bg-[#557f6a] hover:bg-[#4a6d5a] text-white font-semibold transition-all duration-300 will-change-transform shadow-[0_8px_24px_rgba(44,36,33,.25)] hover:-translate-y-0.5 hover:shadow-[0_14px_36px_rgba(44,36,33,.30)] active:translate-y-0 focus:outline-none focus-visible:ring-4 focus-visible:ring-primary/25" href="#services">
-            <span class="relative z-10">Découvrir mes accompagnements</span>
-            <svg aria-hidden="true" class="relative z-10 transition-transform group-hover:translate-x-0.5" fill="none" height="18" viewbox="0 0 24 24" width="18">
-              <path d="M5 12h14M13 5l7 7-7 7" stroke="currentColor" stroke-linecap="round" stroke-width="1.5"></path>
-            </svg>
-          </a>
-          <a class="group relative inline-flex items-center gap-3 rounded-[40px] px-7 py-3.5 text-charcoal ring-1 ring-charcoal/20 backdrop-blur-sm transition-all duration-300 hover:bg-white/50 hover:ring-charcoal/30 focus:outline-none focus-visible:ring-4 focus-visible:ring-primary/30" href="#contact">
-            <span>Réserver un appel découverte</span>
-            <svg aria-hidden="true" class="transition-transform group-hover:translate-x-0.5" fill="none" height="18" viewbox="0 0 24 24" width="18">
-              <path d="M5 12h14M13 5l7 7-7 7" stroke="currentColor" stroke-linecap="round" stroke-width="1.5"></path>
-            </svg>
-          </a>
+  <!-- HERO -->
+  <section class="pt-20 lg:pt-24" id="hero">
+    <div class="container">
+      <div class="relative h-[75vh] min-h-[500px] max-h-[700px] flex flex-col items-center justify-center rounded-2.5xl overflow-hidden shadow-soft">
+        <img src="./assets/hero/hero-harmonie-interieure.webp" alt="Salon lumineux et végétal, un intérieur harmonieux" class="absolute inset-0 w-full h-full object-cover -z-20"/>
+        <div class="absolute inset-0 bg-cream/60 -z-10"></div>
+        <div class="relative text-center text-charcoal px-4">
+          <h1 class="font-display text-4xl/[1.1] sm:text-5xl lg:text-6xl text-charcoal">
+            Créez un intérieur qui vous ressemble,<br class="hidden sm:block"/> <span class="text-primary">sans les doutes</span>
+          </h1>
+          <p class="mt-5 text-[17px] leading-7 text-taupe max-w-2xl mx-auto">
+            Conseils en décoration et accompagnement pour les primo-accédants et les rénovations à Annecy. Je vous aide à transformer votre espace en un véritable cocon de bien-être.
+          </p>
+          <div class="mt-8 flex flex-col sm:flex-row gap-4 sm:gap-5 items-center justify-center">
+            <a class="ring-1 ring-black/5 group relative inline-flex items-center gap-3 rounded-[40px] px-7 py-3.5 bg-[#557f6a] hover:bg-[#4a6d5a] text-white font-semibold transition-all duration-300 will-change-transform shadow-[0_8px_24px_rgba(44,36,33,.25)] hover:-translate-y-0.5 hover:shadow-[0_14px_36px_rgba(44,36,33,.30)] active:translate-y-0 focus:outline-none focus-visible:ring-4 focus-visible:ring-primary/25" href="#services">
+              <span class="relative z-10">Découvrir mes accompagnements</span>
+              <svg aria-hidden="true" class="relative z-10 transition-transform group-hover:translate-x-0.5" fill="none" height="18" viewBox="0 0 24 24" width="18">
+                <path d="M5 12h14M13 5l7 7-7 7" stroke="currentColor" stroke-linecap="round" stroke-width="1.5"></path>
+              </svg>
+            </a>
+            <a class="group relative inline-flex items-center gap-3 rounded-[40px] px-7 py-3.5 text-charcoal ring-1 ring-charcoal/20 backdrop-blur-sm transition-all duration-300 hover:bg-white/50 hover:ring-charcoal/30 focus:outline-none focus-visible:ring-4 focus-visible:ring-primary/30" href="#contact">
+              <span>Réserver un appel découverte</span>
+              <svg aria-hidden="true" class="transition-transform group-hover:translate-x-0.5" fill="none" height="18" viewBox="0 0 24 24" width="18">
+                <path d="M5 12h14M13 5l7 7-7 7" stroke="currentColor" stroke-linecap="round" stroke-width="1.5"></path>
+              </svg>
+            </a>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- Le reste du document... -->
-<section class="mt-20 sm:mt-24" id="realisations">
-<div class="container">
-<h2 class="font-display text-3xl sm:text-4xl text-center text-charcoal">Mes <span class="text-primary">Réalisations</span></h2>
-<div class="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-<template id="tpl-card">
-<article class="group rounded-2.5xl bg-white ring-1 ring-sage/60 overflow-hidden shadow-card hover:shadow-soft transition-shadow">
-<div class="aspect-[4/3] overflow-hidden">
-<img alt="" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]"/>
-</div>
-</article>
-</template>
-<div class="cards grid sm:contents lg:contents">
-<article class="group rounded-2.5xl bg-white ring-1 ring-sage/60 overflow-hidden shadow-card hover:shadow-soft transition-shadow">
-<a class="group relative block overflow-hidden rounded-3xl ring-1 ring-black/5 shadow-sm bg-white transition-transform duration-300 motion-safe:hover:-translate-y-0.5" data-lightbox-alt="Salon épuré à Annecy" data-lightbox-src="./assets/realisations/salon-epure-annecy.webp" href="#"><div class="relative aspect-[4/3] overflow-hidden"><img alt="Salon épuré à Annecy" class="transition ease-out w-full transition-transform duration-300 motion-safe:group-hover:scale-[1.03] h-full aspect-[4/3] object-cover group-hover:scale-[1.03] duration-500" decoding="async" loading="lazy" src="./assets/realisations/salon-epure-annecy.webp"/><div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/20 via-black/0 to-transparent opacity-0 transition-opacity duration-300 motion-safe:group-hover:opacity-100"></div><div class="pointer-events-none absolute bottom-3 left-3 right-3 flex items-center justify-between"><span class="rounded-full bg-white/85 backdrop-blur px-3 py-1 text-sm font-medium text-[#2c2421] shadow-sm ring-1 ring-black/5 transition-transform duration-300 motion-safe:group-hover:-translate-y-0.5">Salon épuré à Annecy</span></div></div></a>
-</article>
-<article class="group rounded-2.5xl bg-white ring-1 ring-sage/60 overflow-hidden shadow-card hover:shadow-soft transition-shadow">
-<a class="group relative block overflow-hidden rounded-3xl ring-1 ring-black/5 shadow-sm bg-white transition-transform duration-300 motion-safe:hover:-translate-y-0.5" data-lightbox-alt="Suite parentale chaleureuse" data-lightbox-src="./assets/realisations/suite-parentale-chaleureuse.webp" href="#"><div class="relative aspect-[4/3] overflow-hidden"><img alt="Suite parentale chaleureuse" class="transition ease-out w-full transition-transform duration-300 motion-safe:group-hover:scale-[1.03] h-full aspect-[4/3] object-cover group-hover:scale-[1.03] duration-500" decoding="async" loading="lazy" src="./assets/realisations/suite-parentale-chaleureuse.webp"/><div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/20 via-black/0 to-transparent opacity-0 transition-opacity duration-300 motion-safe:group-hover:opacity-100"></div><div class="pointer-events-none absolute bottom-3 left-3 right-3 flex items-center justify-between"><span class="rounded-full bg-white/85 backdrop-blur px-3 py-1 text-sm font-medium text-[#2c2421] shadow-sm ring-1 ring-black/5 transition-transform duration-300 motion-safe:group-hover:-translate-y-0.5">Suite parentale chaleureuse</span></div></div></a>
-</article>
-<article class="group rounded-2.5xl bg-white ring-1 ring-sage/60 overflow-hidden shadow-card hover:shadow-soft transition-shadow">
-<a class="group relative block overflow-hidden rounded-3xl ring-1 ring-black/5 shadow-sm bg-white transition-transform duration-300 motion-safe:hover:-translate-y-0.5" data-lightbox-alt="Entrée fonctionnelle" data-lightbox-src="./assets/realisations/entree-fonctionnelle.webp" href="#"><div class="relative aspect-[4/3] overflow-hidden"><img alt="Entrée fonctionnelle" class="transition ease-out w-full transition-transform duration-300 motion-safe:group-hover:scale-[1.03] h-full aspect-[4/3] object-cover group-hover:scale-[1.03] duration-500" decoding="async" loading="lazy" src="./assets/realisations/entree-fonctionnelle.webp"/><div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/20 via-black/0 to-transparent opacity-0 transition-opacity duration-300 motion-safe:group-hover:opacity-100"></div><div class="pointer-events-none absolute bottom-3 left-3 right-3 flex items-center justify-between"><span class="rounded-full bg-white/85 backdrop-blur px-3 py-1 text-sm font-medium text-[#2c2421] shadow-sm ring-1 ring-black/5 transition-transform duration-300 motion-safe:group-hover:-translate-y-0.5">Entrée fonctionnelle</span></div></div></a>
-</article>
-<article class="group rounded-2.5xl bg-white ring-1 ring-sage/60 overflow-hidden shadow-card hover:shadow-soft transition-shadow">
-<a class="group relative block overflow-hidden rounded-3xl ring-1 ring-black/5 shadow-sm bg-white transition-transform duration-300 motion-safe:hover:-translate-y-0.5" data-lightbox-alt="Cuisine bois &amp; blanc" data-lightbox-src="./assets/realisations/cuisine-bois-blanc.webp" href="#"><div class="relative aspect-[4/3] overflow-hidden"><img alt="Cuisine bois &amp; blanc" class="transition ease-out w-full transition-transform duration-300 motion-safe:group-hover:scale-[1.03] h-full aspect-[4/3] object-cover group-hover:scale-[1.03] duration-500" decoding="async" loading="lazy" src="./assets/realisations/cuisine-bois-blanc.webp"/><div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/20 via-black/0 to-transparent opacity-0 transition-opacity duration-300 motion-safe:group-hover:opacity-100"></div><div class="pointer-events-none absolute bottom-3 left-3 right-3 flex items-center justify-between"><span class="rounded-full bg-white/85 backdrop-blur px-3 py-1 text-sm font-medium text-[#2c2421] shadow-sm ring-1 ring-black/5 transition-transform duration-300 motion-safe:group-hover:-translate-y-0.5">Cuisine bois &amp; blanc</span></div></div></a>
-</article>
-<article class="group rounded-2.5xl bg-white ring-1 ring-sage/60 overflow-hidden shadow-card hover:shadow-soft transition-shadow">
-<a class="group relative block overflow-hidden rounded-3xl ring-1 ring-black/5 shadow-sm bg-white transition-transform duration-300 motion-safe:hover:-translate-y-0.5" data-lightbox-alt="Bibliothèque sur mesure" data-lightbox-src="./assets/realisations/bibliotheque-sur-mesure.webp" href="#"><div class="relative aspect-[4/3] overflow-hidden"><img alt="Bibliothèque sur mesure" class="transition ease-out w-full transition-transform duration-300 motion-safe:group-hover:scale-[1.03] h-full aspect-[4/3] object-cover group-hover:scale-[1.03] duration-500" decoding="async" loading="lazy" src="./assets/realisations/bibliotheque-sur-mesure.webp"/><div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/20 via-black/0 to-transparent opacity-0 transition-opacity duration-300 motion-safe:group-hover:opacity-100"></div><div class="pointer-events-none absolute bottom-3 left-3 right-3 flex items-center justify-between"><span class="rounded-full bg-white/85 backdrop-blur px-3 py-1 text-sm font-medium text-[#2c2421] shadow-sm ring-1 ring-black/5 transition-transform duration-300 motion-safe:group-hover:-translate-y-0.5">Bibliothèque sur mesure</span></div></div></a>
-</article>
-<article class="group rounded-2.5xl bg-white ring-1 ring-sage/60 overflow-hidden shadow-card hover:shadow-soft transition-shadow">
-<a class="group relative block overflow-hidden rounded-3xl ring-1 ring-black/5 shadow-sm bg-white transition-transform duration-300 motion-safe:hover:-translate-y-0.5" data-lightbox-alt="Espace de travail lumineux" data-lightbox-src="./assets/realisations/espace-travail-lumineux.webp" href="#"><div class="relative aspect-[4/3] overflow-hidden"><img alt="Espace de travail lumineux" class="transition ease-out w-full transition-transform duration-300 motion-safe:group-hover:scale-[1.03] h-full aspect-[4/3] object-cover group-hover:scale-[1.03] duration-500" decoding="async" loading="lazy" src="./assets/realisations/espace-travail-lumineux.webp"/><div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/20 via-black/0 to-transparent opacity-0 transition-opacity duration-300 motion-safe:group-hover:opacity-100"></div><div class="pointer-events-none absolute bottom-3 left-3 right-3 flex items-center justify-between"><span class="rounded-full bg-white/85 backdrop-blur px-3 py-1 text-sm font-medium text-[#2c2421] shadow-sm ring-1 ring-black/5 transition-transform duration-300 motion-safe:group-hover:-translate-y-0.5">Espace de travail lumineux</span></div></div></a>
-</article>
-<article class="group rounded-2.5xl bg-white ring-1 ring-sage/60 overflow-hidden shadow-card hover:shadow-soft transition-shadow">
-<a class="group relative block overflow-hidden rounded-3xl ring-1 ring-black/5 shadow-sm bg-white transition-transform duration-300 motion-safe:hover:-translate-y-0.5" data-lightbox-alt="Salle de bain détente" data-lightbox-src="./assets/realisations/salle-de-bain-detente.webp" href="#"><div class="relative aspect-[4/3] overflow-hidden"><img alt="Salle de bain détente" class="transition ease-out w-full transition-transform duration-300 motion-safe:group-hover:scale-[1.03] h-full aspect-[4/3] object-cover group-hover:scale-[1.03] duration-500" decoding="async" loading="lazy" src="./assets/realisations/salle-de-bain-detente.webp"/><div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/20 via-black/0 to-transparent opacity-0 transition-opacity duration-300 motion-safe:group-hover:opacity-100"></div><div class="pointer-events-none absolute bottom-3 left-3 right-3 flex items-center justify-between"><span class="rounded-full bg-white/85 backdrop-blur px-3 py-1 text-sm font-medium text-[#2c2421] shadow-sm ring-1 ring-black/5 transition-transform duration-300 motion-safe:group-hover:-translate-y-0.5">Salle de bain détente</span></div></div></a>
-</article>
-<article class="group rounded-2.5xl bg-white ring-1 ring-sage/60 overflow-hidden shadow-card hover:shadow-soft transition-shadow">
-<a class="group relative block overflow-hidden rounded-3xl ring-1 ring-black/5 shadow-sm bg-white transition-transform duration-300 motion-safe:hover:-translate-y-0.5" data-lightbox-alt="Salon bibliothèque cosy" data-lightbox-src="./assets/realisations/salon-bibliotheque-cosy.webp" href="#"><div class="relative aspect-[4/3] overflow-hidden"><img alt="Salon bibliothèque cosy" class="transition ease-out w-full transition-transform duration-300 motion-safe:group-hover:scale-[1.03] h-full aspect-[4/3] object-cover group-hover:scale-[1.03] duration-500" decoding="async" loading="lazy" src="./assets/realisations/salon-bibliotheque-cosy.webp"/><div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/20 via-black/0 to-transparent opacity-0 transition-opacity duration-300 motion-safe:group-hover:opacity-100"></div><div class="pointer-events-none absolute bottom-3 left-3 right-3 flex items-center justify-between"><span class="rounded-full bg-white/85 backdrop-blur px-3 py-1 text-sm font-medium text-[#2c2421] shadow-sm ring-1 ring-black/5 transition-transform duration-300 motion-safe:group-hover:-translate-y-0.5">Salon bibliothèque cosy</span></div></div></a>
-</article>
-</div>
-</div>
-</div>
-</section>
-<!-- Services -->
-<section class="mt-20 sm:mt-28" id="services">
-<div class="container">
-<h2 class="font-display text-3xl sm:text-4xl text-center text-charcoal">Mes Accompagnements sur <span class="text-primary">Mesure</span></h2>
-<!-- GRILLE AMÉLIORÉE: plus d'espace, et les cartes s'étirent pour avoir la même hauteur -->
-<div class="mt-12 grid gap-y-10 gap-x-8 lg:grid-cols-3 items-stretch">
+  <!-- Réalisations -->
+  <section class="mt-20 sm:mt-24" id="realisations">
+    <div class="container">
+      <h2 class="font-display text-3xl sm:text-4xl text-center text-charcoal">Mes <span class="text-primary">Réalisations</span></h2>
+      <div class="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+        <div class="cards grid sm:contents lg:contents">
+          <article class="group rounded-2.5xl bg-white ring-1 ring-sage/60 overflow-hidden shadow-card hover:shadow-soft transition-shadow">
+            <a class="group relative block overflow-hidden rounded-3xl ring-1 ring-black/5 shadow-sm bg-white transition-transform duration-300 motion-safe:hover:-translate-y-0.5" data-lightbox-alt="Salon épuré à Annecy" data-lightbox-src="./assets/realisations/salon-epure-annecy.webp" href="#">
+              <div class="relative aspect-[4/3] overflow-hidden">
+                <img alt="Salon épuré à Annecy" class="transition ease-out w-full transition-transform duration-300 motion-safe:group-hover:scale-[1.03] h-full aspect-[4/3] object-cover group-hover:scale-[1.03] duration-500" decoding="async" loading="lazy" src="./assets/realisations/salon-epure-annecy.webp"/>
+                <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/20 via-black/0 to-transparent opacity-0 transition-opacity duration-300 motion-safe:group-hover:opacity-100"></div>
+                <div class="pointer-events-none absolute bottom-3 left-3 right-3 flex items-center justify-between">
+                  <span class="rounded-full bg-white/85 backdrop-blur px-3 py-1 text-sm font-medium text-[#2c2421] shadow-sm ring-1 ring-black/5 transition-transform duration-300 motion-safe:group-hover:-translate-y-0.5">Salon épuré à Annecy</span>
+                </div>
+              </div>
+            </a>
+          </article>
+          <article class="group rounded-2.5xl bg-white ring-1 ring-sage/60 overflow-hidden shadow-card hover:shadow-soft transition-shadow">
+            <a class="group relative block overflow-hidden rounded-3xl ring-1 ring-black/5 shadow-sm bg-white transition-transform duration-300 motion-safe:hover:-translate-y-0.5" data-lightbox-alt="Suite parentale chaleureuse" data-lightbox-src="./assets/realisations/suite-parentale-chaleureuse.webp" href="#">
+              <div class="relative aspect-[4/3] overflow-hidden">
+                <img alt="Suite parentale chaleureuse" class="transition ease-out w-full transition-transform duration-300 motion-safe:group-hover:scale-[1.03] h-full aspect-[4/3] object-cover group-hover:scale-[1.03] duration-500" decoding="async" loading="lazy" src="./assets/realisations/suite-parentale-chaleureuse.webp"/>
+                <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/20 via-black/0 to-transparent opacity-0 transition-opacity duration-300 motion-safe:group-hover:opacity-100"></div>
+                <div class="pointer-events-none absolute bottom-3 left-3 right-3 flex items-center justify-between">
+                  <span class="rounded-full bg-white/85 backdrop-blur px-3 py-1 text-sm font-medium text-[#2c2421] shadow-sm ring-1 ring-black/5 transition-transform duration-300 motion-safe:group-hover:-translate-y-0.5">Suite parentale chaleureuse</span>
+                </div>
+              </div>
+            </a>
+          </article>
+          <article class="group rounded-2.5xl bg-white ring-1 ring-sage/60 overflow-hidden shadow-card hover:shadow-soft transition-shadow">
+            <a class="group relative block overflow-hidden rounded-3xl ring-1 ring-black/5 shadow-sm bg-white transition-transform duration-300 motion-safe:hover:-translate-y-0.5" data-lightbox-alt="Entrée fonctionnelle" data-lightbox-src="./assets/realisations/entree-fonctionnelle.webp" href="#">
+              <div class="relative aspect-[4/3] overflow-hidden">
+                <img alt="Entrée fonctionnelle" class="transition ease-out w-full transition-transform duration-300 motion-safe:group-hover:scale-[1.03] h-full aspect-[4/3] object-cover group-hover:scale-[1.03] duration-500" decoding="async" loading="lazy" src="./assets/realisations/entree-fonctionnelle.webp"/>
+                <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/20 via-black/0 to-transparent opacity-0 transition-opacity duration-300 motion-safe:group-hover:opacity-100"></div>
+                <div class="pointer-events-none absolute bottom-3 left-3 right-3 flex items-center justify-between">
+                  <span class="rounded-full bg-white/85 backdrop-blur px-3 py-1 text-sm font-medium text-[#2c2421] shadow-sm ring-1 ring-black/5 transition-transform duration-300 motion-safe:group-hover:-translate-y-0.5">Entrée fonctionnelle</span>
+                </div>
+              </div>
+            </a>
+          </article>
+          <article class="group rounded-2.5xl bg-white ring-1 ring-sage/60 overflow-hidden shadow-card hover:shadow-soft transition-shadow">
+            <a class="group relative block overflow-hidden rounded-3xl ring-1 ring-black/5 shadow-sm bg-white transition-transform duration-300 motion-safe:hover:-translate-y-0.5" data-lightbox-alt="Cuisine bois &amp; blanc" data-lightbox-src="./assets/realisations/cuisine-bois-blanc.webp" href="#">
+              <div class="relative aspect-[4/3] overflow-hidden">
+                <img alt="Cuisine bois &amp; blanc" class="transition ease-out w-full transition-transform duration-300 motion-safe:group-hover:scale-[1.03] h-full aspect-[4/3] object-cover group-hover:scale-[1.03] duration-500" decoding="async" loading="lazy" src="./assets/realisations/cuisine-bois-blanc.webp"/>
+                <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/20 via-black/0 to-transparent opacity-0 transition-opacity duration-300 motion-safe:group-hover:opacity-100"></div>
+                <div class="pointer-events-none absolute bottom-3 left-3 right-3 flex items-center justify-between">
+                  <span class="rounded-full bg-white/85 backdrop-blur px-3 py-1 text-sm font-medium text-[#2c2421] shadow-sm ring-1 ring-black/5 transition-transform duration-300 motion-safe:group-hover:-translate-y-0.5">Cuisine bois &amp; blanc</span>
+                </div>
+              </div>
+            </a>
+          </article>
+          <article class="group rounded-2.5xl bg-white ring-1 ring-sage/60 overflow-hidden shadow-card hover:shadow-soft transition-shadow">
+            <a class="group relative block overflow-hidden rounded-3xl ring-1 ring-black/5 shadow-sm bg-white transition-transform duration-300 motion-safe:hover:-translate-y-0.5" data-lightbox-alt="Bibliothèque sur mesure" data-lightbox-src="./assets/realisations/bibliotheque-sur-mesure.webp" href="#">
+              <div class="relative aspect-[4/3] overflow-hidden">
+                <img alt="Bibliothèque sur mesure" class="transition ease-out w-full transition-transform duration-300 motion-safe:group-hover:scale-[1.03] h-full aspect-[4/3] object-cover group-hover:scale-[1.03] duration-500" decoding="async" loading="lazy" src="./assets/realisations/bibliotheque-sur-mesure.webp"/>
+                <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/20 via-black/0 to-transparent opacity-0 transition-opacity duration-300 motion-safe:group-hover:opacity-100"></div>
+                <div class="pointer-events-none absolute bottom-3 left-3 right-3 flex items-center justify-between">
+                  <span class="rounded-full bg-white/85 backdrop-blur px-3 py-1 text-sm font-medium text-[#2c2421] shadow-sm ring-1 ring-black/5 transition-transform duration-300 motion-safe:group-hover:-translate-y-0.5">Bibliothèque sur mesure</span>
+                </div>
+              </div>
+            </a>
+          </article>
+          <article class="group rounded-2.5xl bg-white ring-1 ring-sage/60 overflow-hidden shadow-card hover:shadow-soft transition-shadow">
+            <a class="group relative block overflow-hidden rounded-3xl ring-1 ring-black/5 shadow-sm bg-white transition-transform duration-300 motion-safe:hover:-translate-y-0.5" data-lightbox-alt="Espace de travail lumineux" data-lightbox-src="./assets/realisations/espace-travail-lumineux.webp" href="#">
+              <div class="relative aspect-[4/3] overflow-hidden">
+                <img alt="Espace de travail lumineux" class="transition ease-out w-full transition-transform duration-300 motion-safe:group-hover:scale-[1.03] h-full aspect-[4/3] object-cover group-hover:scale-[1.03] duration-500" decoding="async" loading="lazy" src="./assets/realisations/espace-travail-lumineux.webp"/>
+                <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/20 via-black/0 to-transparent opacity-0 transition-opacity duration-300 motion-safe:group-hover:opacity-100"></div>
+                <div class="pointer-events-none absolute bottom-3 left-3 right-3 flex items-center justify-between">
+                  <span class="rounded-full bg-white/85 backdrop-blur px-3 py-1 text-sm font-medium text-[#2c2421] shadow-sm ring-1 ring-black/5 transition-transform duration-300 motion-safe:group-hover:-translate-y-0.5">Espace de travail lumineux</span>
+                </div>
+              </div>
+            </a>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<!-- CARTE 1: Coaching Déco Flash -->
-<article class="group flex flex-col rounded-2.5xl bg-white ring-1 ring-sage/60 p-8 shadow-card hover:shadow-soft transition-all duration-300 hover:-translate-y-1.5">
-    <div class="flex items-center gap-4">
-    <span class="inline-flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-primary/15 text-primary">
-        <!-- Icône améliorée pour "Flash" -->
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"/><path d="M9 18h6"/><path d="M10 22h4"/></svg>
-    </span>
-    <h3 class="font-display text-xl text-charcoal">Coaching Déco Flash</h3>
-    </div>
-    <p class="mt-4 flex-grow text-taupe">Idéal pour une pièce unique ou pour débloquer une situation. En 2h, en visio ou chez vous, nous validons vos choix de couleurs, l'agencement ou votre shopping-list pour vous donner confiance.</p>
-    <div class="mt-6 pt-6 border-t border-linen">
-    <div class="text-sm">
-        <span class="inline-flex items-center gap-2 rounded-full bg-amber-50 text-gold px-3 py-1 ring-1 ring-gold/30">À partir de 290€</span>
-    </div>
-    <a class="mt-5 inline-flex items-center gap-2 font-medium text-charcoal hover:text-primary transition-colors" href="#contact">
-        En savoir plus
-        <svg class="transition-transform group-hover:translate-x-0.5" fill="none" height="18" viewBox="0 0 24 24" width="18"><path d="M5 12h14M13 5l7 7-7 7" stroke="currentColor" stroke-linecap="round" stroke-width="1.5"></path></svg>
-    </a>
-    </div>
-</article>
-
-<!-- CARTE 2: Projet Complet (MISE EN AVANT) -->
-<article class="group relative flex flex-col rounded-2.5xl bg-primary text-white p-8 shadow-xl ring-2 ring-primaryDark transition-all duration-300 lg:-translate-y-4">
-    <span class="absolute top-0 -translate-y-1/2 left-1/2 -translate-x-1/2 inline-block bg-gold text-white px-4 py-1 rounded-full text-sm font-semibold uppercase tracking-wider">Populaire</span>
-    <div class="flex items-center gap-4">
-    <span class="inline-flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-white/20 text-white">
-        <!-- Icône améliorée pour "Projet Complet" -->
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><line x1="9" y1="21" x2="9" y2="9"></line></svg>
-    </span>
-    <h3 class="font-display text-2xl">Projet de Décoration Complet</h3>
-    </div>
-    <p class="mt-4 flex-grow text-sage">La formule la plus populaire. De la planche d'ambiance aux plans 3D, en passant par la sélection du mobilier et des matériaux, je conçois pour vous un projet clé en main et un intérieur harmonieux.</p>
-    <div class="mt-6 pt-6 border-t border-white/20">
-    <div class="text-sm">
-        <span class="inline-flex items-center gap-2 rounded-full bg-white/20 text-white px-3 py-1 ring-1 ring-white/30">Sur devis</span>
-    </div>
-    <a class="mt-5 inline-flex items-center gap-2 font-semibold text-white hover:text-sage transition-colors" href="#contact">
-        Demander un devis
-        <svg class="transition-transform group-hover:translate-x-0.5" fill="none" height="18" viewBox="0 0 24 24" width="18"><path d="M5 12h14M13 5l7 7-7 7" stroke="currentColor" stroke-linecap="round" stroke-width="1.5"></path></svg>
-    </a>
-    </div>
-</article>
-
-<!-- CARTE 3: Suivi de Chantier -->
-<article class="group flex flex-col rounded-2.5xl bg-white ring-1 ring-sage/60 p-8 shadow-card hover:shadow-soft transition-all duration-300 hover:-translate-y-1.5">
-    <div class="flex items-center gap-4">
-    <span class="inline-flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-primary/15 text-primary">
-        <!-- Icône améliorée pour "Suivi" -->
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect><path d="m9 14 2 2 4-4"></path></svg>
-    </span>
-    <h3 class="font-display text-xl text-charcoal">Suivi Esthétique de Chantier</h3>
-    </div>
-    <p class="mt-4 flex-grow text-taupe">Pour les projets de rénovation complète. Je collabore avec vos artisans pour m'assurer que chaque détail de la conception est parfaitement exécuté, et je gère pour vous le shopping et l'installation.</p>
-    <div class="mt-6 pt-6 border-t border-linen">
-    <div class="text-sm">
-        <span class="inline-flex items-center gap-2 rounded-full bg-sage/40 text-charcoal px-3 py-1 ring-1 ring-sage/70">Sur devis</span>
-    </div>
-    <a class="mt-5 inline-flex items-center gap-2 font-medium text-charcoal hover:text-primary transition-colors" href="#contact">
-        Discuter du besoin
-        <svg class="transition-transform group-hover:translate-x-0.5" fill="none" height="18" viewBox="0 0 24 24" width="18"><path d="M5 12h14M13 5l7 7-7 7" stroke="currentColor" stroke-linecap="round" stroke-width="1.5"></path></svg>
-    </a>
-    </div>
-</article>
-
-</div>
-</div>
-</section>
-<!-- À propos -->
-<section class="mt-20 sm:mt-28" id="histoire">
-<div class="container grid lg:grid-cols-2 gap-10 items-center">
-<div class="order-2 lg:order-1">
-<h2 class="font-display text-3xl sm:text-4xl text-charcoal">Mon <span class="text-primary">Histoire</span></h2>
-<p class="mt-4 text-taupe">Après plusieurs années dans un univers professionnel exigeant, j’ai choisi de me reconvertir et d’accompagner les primo-accédants &amp; familles d’Annecy dans leurs projets d’aménagement. Mon approche est <em>humaine</em>, <em>pédagogique</em> et orientée résultat.</p>
-<p class="mt-3 text-taupe">Je vous aide à faire les bons choix sans perdre de temps ni de budget, pour créer une atmosphère apaisante et fonctionnelle.</p>
-<div class="mt-6 flex flex-col sm:flex-row gap-3">
-<a class="ring-1 ring-black/5 focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[#557f6a]/60 hover:bg-[#4a6d5a] inline-flex items-center justify-center rounded-full bg-[#557f6a] text-white px-6 py-3 shadow-soft hover:shadow-card transition-all focus-outline" href="#realisations">Voir mes réalisations</a>
-<a class="inline-flex items-center justify-center rounded-full border border-sage bg-white/70 px-6 py-3 hover:bg-sage/30 transition-colors focus-outline" href="#contact">Parler de votre projet</a>
-</div>
-</div>
-<div class="order-1 lg:order-2">
-<figure class="relative rounded-2.5xl overflow-hidden shadow-soft ring-1 ring-sage/60">
-<img alt="Chloé Dubois décoratrice d'intérieur" class="w-full h-full object-cover aspect-[4/5]" decoding="async" loading="lazy" src="./assets/portrait/portrait-mon-histoire.webp"/>
-</figure>
-</div>
-</div>
-</section>
-<!-- Témoignages -->
-<section class="mt-20 sm:mt-28">
-<div class="container">
-<h2 class="font-display text-3xl sm:text-4xl text-center text-charcoal">Ils me font <span class="text-primary">confiance</span></h2>
-<div class="mt-8 relative">
-<div class="overflow-hidden rounded-2.5xl bg-white ring-1 ring-sage/60 shadow-card" id="slider">
-<!-- conteneur qui défile horizontalement -->
-<div class="whitespace-nowrap transition-transform duration-500 will-change-transform" id="slides">
-<!-- Slide 1 -->
-<div class="inline-block align-top w-full min-w-full p-8 whitespace-normal">
-<div class="max-w-3xl mx-auto flex flex-col sm:flex-row gap-6 items-start">
-<img alt="Portrait client" class="h-16 w-16 rounded-full object-cover" src="https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?q=80&amp;w=300&amp;auto=format&amp;fit=crop"/>
-<blockquote class="text-lg leading-7 text-charcoal">
-                  « Un accompagnement d’une qualité exceptionnelle. Grâce à Chloé, nous avons enfin visualisé notre projet, et surtout passé à l’action en toute sérénité. »
-                  <footer class="mt-4 text-sm text-taupe"><footer class="mt-4 text-sm text-taupe">Marie &amp; Thomas – Rénovation T3 à Annecy</footer></footer>
-</blockquote>
-</div>
-</div>
-<!-- Slide 2 -->
-<div class="inline-block align-top w-full min-w-full p-8 whitespace-normal">
-<div class="max-w-3xl mx-auto flex flex-col sm:flex-row gap-6 items-start">
-<img alt="Portrait client" class="h-16 w-16 rounded-full object-cover" src="https://images.unsplash.com/photo-1527980965255-d3b416303d12?q=80&amp;w=300&amp;auto=format&amp;fit=crop"/>
-<blockquote class="text-lg leading-7 text-charcoal">
-                  « Conseils clairs, moodboards précis, artisans recommandés : tout s’est déroulé comme prévu. »
-                  <footer class="mt-4 text-sm text-taupe">Lucas – Aménagement séjour à Seynod</footer>
-</blockquote>
-</div>
-</div>
-<!-- Slide 3 -->
-<div class="inline-block align-top w-full min-w-full p-8 whitespace-normal">
-<div class="max-w-3xl mx-auto flex flex-col sm:flex-row gap-6 items-start">
-<img alt="Portrait client" class="h-16 w-16 rounded-full object-cover" src="https://images.unsplash.com/photo-1502685104226-ee32379fefbe?q=80&amp;w=300&amp;auto=format&amp;fit=crop"/>
-<blockquote class="text-lg leading-7 text-charcoal">
-                  « Nous avons adoré l’approche pédagogique, les rendus 3D et la liste shopping. »
-                  <footer class="mt-4 text-sm text-taupe">Hélène – Maison familiale à Cran-Gevrier</footer>
-</blockquote>
-</div>
-</div>
-</div>
-</div>
-<!-- points -->
-<div class="mt-4 flex items-center justify-center gap-2">
-<button aria-label="Aller au témoignage 1" class="dot h-2.5 w-2.5 rounded-full bg-primary/30"></button>
-<button aria-label="Aller au témoignage 2" class="dot h-2.5 w-2.5 rounded-full bg-primary/30"></button>
-<button aria-label="Aller au témoignage 3" class="dot h-2.5 w-2.5 rounded-full bg-primary/30"></button>
-</div>
-</div>
-</div>
-</section>
-<!-- FAQ -->
-<section class="mt-20 sm:mt-28" id="faq">
-<div class="container">
-<h2 class="font-display text-3xl sm:text-4xl text-center text-charcoal">Vos Questions, <span class="text-primary">Mes Réponses</span></h2>
-<div class="mx-auto max-w-3xl mt-8 space-y-3">
-<details class="group rounded-2.5xl bg-white ring-1 ring-sage/60 p-5 shadow-card open:shadow-soft transition-all">
-<summary class="flex items-center justify-between cursor-pointer list-none">
-<span class="font-medium">Quel est votre processus de travail ?</span>
-<svg class="ml-4 transition-transform group-open:rotate-180" fill="none" height="18" viewbox="0 0 24 24" width="18"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-linecap="round" stroke-width="1.5"></path></svg>
-</summary>
-<div class="mt-3 text-taupe">Un appel découverte, un rendez-vous sur site, puis des livrables adaptés (plans, moodboards, 3D, shopping list) et un suivi si besoin.</div>
-</details>
-<details class="group rounded-2.5xl bg-white ring-1 ring-sage/60 p-5 shadow-card">
-<summary class="flex items-center justify-between cursor-pointer list-none">
-<span class="font-medium">Travaillez-vous avec tous les budgets ?</span>
-<svg class="ml-4 transition-transform group-open:rotate-180" fill="none" height="18" viewbox="0 0 24 24" width="18"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-linecap="round" stroke-width="1.5"></path></svg>
-</summary>
-<div class="mt-3 text-taupe">Oui, mes forfaits s’adaptent et nous posons un cadre clair dès le départ.</div>
-</details>
-<details class="group rounded-2.5xl bg-white ring-1 ring-sage/60 p-5 shadow-card">
-<summary class="flex items-center justify-between cursor-pointer list-none">
-<span class="font-medium">Proposez-vous des plans 3D ?</span>
-<svg class="ml-4 transition-transform group-open:rotate-180" fill="none" height="18" viewbox="0 0 24 24" width="18"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-linecap="round" stroke-width="1.5"></path></svg>
-</summary>
-<div class="mt-3 text-taupe">Bien sûr, c’est souvent le meilleur moyen de se projeter sereinement.</div>
-</details>
-<details class="group rounded-2.5xl bg-white ring-1 ring-sage/60 p-5 shadow-card">
-<summary class="flex items-center justify-between cursor-pointer list-none">
-<span class="font-medium">Intervenez-vous en dehors d’Annecy ?</span>
-<svg class="ml-4 transition-transform group-open:rotate-180" fill="none" height="18" viewbox="0 0 24 24" width="18"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-linecap="round" stroke-width="1.5"></path></svg>
-</summary>
-<div class="mt-3 text-taupe">Oui dans un rayon raisonnable, et à distance pour certaines prestations.</div>
-</details>
-</div>
-</div>
-</section>
-
-<!-- NOUVELLE SECTION CONTACT / APPEL DÉCOUVERTE -->
-<section class="mt-20 sm:mt-28" id="contact">
-  <div class="container">
-    <h2 class="font-display text-3xl sm:text-4xl text-center text-charcoal">Prêt(e) à démarrer votre <span class="text-primary">projet ?</span></h2>
-    <p class="mt-3 text-center text-taupe max-w-2xl mx-auto">Planifions un premier échange gratuit de 15 minutes pour discuter de vos envies et de vos besoins. C'est simple, rapide et sans engagement.</p>
-    
-    <!-- Widget de réservation type Calendly -->
-    <div class="mt-10 max-w-5xl mx-auto bg-white rounded-2.5xl shadow-soft ring-1 ring-sage/60 overflow-hidden">
-      <div class="grid lg:grid-cols-[minmax(0,_1fr)_minmax(0,_2fr)]">
-        
-        <!-- Colonne de gauche : Informations sur le RDV -->
-        <div class="p-6 sm:p-8 border-b lg:border-b-0 lg:border-r border-linen">
-          <figure class="flex items-center gap-3">
-            <img src="./assets/portrait/portrait-mon-histoire.webp" alt="Chloé Dubois" class="h-14 w-14 rounded-full object-cover">
-            <figcaption>
-              <p class="text-sm text-taupe">Chloé Dubois</p>
-              <h3 class="font-display text-xl text-charcoal">Appel Découverte</h3>
-            </figcaption>
-          </figure>
-          
-          <div class="mt-6 space-y-3 text-charcoal">
-            <div class="flex items-center gap-3">
-              <svg class="h-5 w-5 text-taupe" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-              <span>15 min</span>
-            </div>
-            <div class="flex items-start gap-3">
-              <svg class="h-5 w-5 text-taupe shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" d="M15.75 10.5l4.72-4.72a.75.75 0 011.28.53v11.38a.75.75 0 01-1.28.53l-4.72-4.72M4.5 18.75h9a2.25 2.25 0 002.25-2.25v-9A2.25 2.25 0 0013.5 5.25h-9A2.25 2.25 0 002.25 7.5v9A2.25 2.25 0 004.5 18.75z"></path></svg>
-              <span>Appel Vidéo (Google Meet)</span>
-            </div>
+  <!-- Services (Version améliorée) -->
+  <section class="mt-20 sm:mt-28" id="services">
+    <div class="container">
+      <h2 class="font-display text-3xl sm:text-4xl text-center text-charcoal">Mes Accompagnements sur <span class="text-primary">Mesure</span></h2>
+      <div class="mt-12 grid gap-y-10 gap-x-8 lg:grid-cols-3 items-stretch">
+        <!-- CARTE 1: Coaching Déco Flash -->
+        <article class="group flex flex-col rounded-2.5xl bg-white ring-1 ring-sage/60 p-8 shadow-card hover:shadow-soft transition-all duration-300 hover:-translate-y-1.5">
+          <div class="flex items-center gap-4">
+            <span class="inline-flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-primary/15 text-primary">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"/><path d="M9 18h6"/><path d="M10 22h4"/></svg>
+            </span>
+            <h3 class="font-display text-xl text-charcoal">Coaching Déco Flash</h3>
           </div>
-          
-          <p class="mt-6 text-sm text-taupe">
-            Cet échange nous permettra de faire connaissance, de comprendre votre projet, vos envies, votre budget et de voir comment je peux vous aider.
+          <p class="mt-4 flex-grow text-taupe">Idéal pour une pièce unique ou pour débloquer une situation. En 2h, en visio ou chez vous, nous validons vos choix de couleurs, l'agencement ou votre shopping-list pour vous donner confiance.</p>
+          <div class="mt-6 pt-6 border-t border-linen">
+            <div class="text-sm">
+              <span class="inline-flex items-center gap-2 rounded-full bg-amber-50 text-gold px-3 py-1 ring-1 ring-gold/30">À partir de 290€</span>
+            </div>
+            <a class="mt-5 inline-flex items-center gap-2 font-medium text-charcoal hover:text-primary transition-colors" href="#contact">
+              En savoir plus
+              <svg class="transition-transform group-hover:translate-x-0.5" fill="none" height="18" viewBox="0 0 24 24" width="18"><path d="M5 12h14M13 5l7 7-7 7" stroke="currentColor" stroke-linecap="round" stroke-width="1.5"></path></svg>
+            </a>
+          </div>
+        </article>
+        <!-- CARTE 2: Projet Complet (MISE EN AVANT) -->
+        <article class="group relative flex flex-col rounded-2.5xl bg-primary text-white p-8 shadow-xl ring-2 ring-primaryDark transition-all duration-300 lg:-translate-y-4">
+          <span class="absolute top-0 -translate-y-1/2 left-1/2 -translate-x-1/2 inline-block bg-gold text-white px-4 py-1 rounded-full text-sm font-semibold uppercase tracking-wider">Populaire</span>
+          <div class="flex items-center gap-4">
+            <span class="inline-flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-white/20 text-white">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><line x1="9" y1="21" x2="9" y2="9"></line></svg>
+            </span>
+            <h3 class="font-display text-2xl">Projet de Décoration Complet</h3>
+          </div>
+          <p class="mt-4 flex-grow text-sage">La formule la plus populaire. De la planche d'ambiance aux plans 3D, en passant par la sélection du mobilier et des matériaux, je conçois pour vous un projet clé en main et un intérieur harmonieux.</p>
+          <div class="mt-6 pt-6 border-t border-white/20">
+            <div class="text-sm">
+              <span class="inline-flex items-center gap-2 rounded-full bg-white/20 text-white px-3 py-1 ring-1 ring-white/30">Sur devis</span>
+            </div>
+            <a class="mt-5 inline-flex items-center gap-2 font-semibold text-white hover:text-sage transition-colors" href="#contact">
+              Demander un devis
+              <svg class="transition-transform group-hover:translate-x-0.5" fill="none" height="18" viewBox="0 0 24 24" width="18"><path d="M5 12h14M13 5l7 7-7 7" stroke="currentColor" stroke-linecap="round" stroke-width="1.5"></path></svg>
+            </a>
+          </div>
+        </article>
+        <!-- CARTE 3: Suivi de Chantier -->
+        <article class="group flex flex-col rounded-2.5xl bg-white ring-1 ring-sage/60 p-8 shadow-card hover:shadow-soft transition-all duration-300 hover:-translate-y-1.5">
+          <div class="flex items-center gap-4">
+            <span class="inline-flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-primary/15 text-primary">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect><path d="m9 14 2 2 4-4"></path></svg>
+            </span>
+            <h3 class="font-display text-xl text-charcoal">Suivi Esthétique de Chantier</h3>
+          </div>
+          <p class="mt-4 flex-grow text-taupe">Pour les projets de rénovation complète. Je collabore avec vos artisans pour m'assurer que chaque détail de la conception est parfaitement exécuté, et je gère pour vous le shopping et l'installation.</p>
+          <div class="mt-6 pt-6 border-t border-linen">
+            <div class="text-sm">
+              <span class="inline-flex items-center gap-2 rounded-full bg-sage/40 text-charcoal px-3 py-1 ring-1 ring-sage/70">Sur devis</span>
+            </div>
+            <a class="mt-5 inline-flex items-center gap-2 font-medium text-charcoal hover:text-primary transition-colors" href="#contact">
+              Discuter du besoin
+              <svg class="transition-transform group-hover:translate-x-0.5" fill="none" height="18" viewBox="0 0 24 24" width="18"><path d="M5 12h14M13 5l7 7-7 7" stroke="currentColor" stroke-linecap="round" stroke-width="1.5"></path></svg>
+            </a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- À propos (SECTION MODIFIÉE) -->
+  <section class="mt-20 sm:mt-28" id="histoire">
+    <div class="container grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+      <div class="order-2 lg:order-1">
+        <h2 class="font-display text-3xl sm:text-4xl text-charcoal">Mon <span class="text-primary">Histoire</span></h2>
+        <div class="mt-4 space-y-4 text-taupe text-base leading-relaxed">
+          <p>
+            Après plusieurs années dans un univers professionnel exigeant, j'ai réalisé que mon environnement avait un impact direct sur mon énergie et mon bien-être. C'est en redessinant mon propre appartement que j'ai eu une révélation : créer un intérieur harmonieux n'est pas une question de luxe, mais d'équilibre.
+          </p>
+          <p>
+            J'ai alors décidé de me former et de faire de cette passion mon métier. Aujourd'hui, ma mission est d'aider les personnes qui se sentent perdues face aux milliers de choix possibles. Je crois profondément qu'un foyer doit être un refuge, une source de joie et un reflet de ceux qui y vivent.
+          </p>
+          <p>
+            Mon approche est basée sur l'écoute, la bienveillance et la co-création pour que votre projet soit avant tout une aventure sereine et excitante.
           </p>
         </div>
-        
-        <!-- Colonne de droite : Sélection de la date et de l'heure -->
-        <div class="p-6 sm:p-8">
-          <h4 class="font-display text-lg text-charcoal">Sélectionnez une date & une heure</h4>
-          
-          <!-- Faux calendrier -->
-          <div class="mt-6">
-            <div class="flex items-center justify-between">
-              <button type="button" aria-label="Mois précédent" class="p-2 rounded-full hover:bg-linen focus-outline">
-                <svg class="h-5 w-5 text-charcoal" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
-              </button>
-              <div class="font-medium text-charcoal">Octobre 2024</div>
-              <button type="button" aria-label="Mois suivant" class="p-2 rounded-full hover:bg-linen focus-outline">
-                <svg class="h-5 w-5 text-charcoal" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
-              </button>
+        <div class="mt-8 flex flex-col sm:flex-row gap-4">
+          <a class="ring-1 ring-black/5 focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[#557f6a]/60 hover:bg-[#4a6d5a] inline-flex items-center justify-center rounded-full bg-[#557f6a] text-white px-6 py-3 shadow-soft hover:shadow-card transition-all focus-outline" href="#realisations">Voir mes réalisations</a>
+          <a class="inline-flex items-center justify-center rounded-full border border-sage bg-white/70 px-6 py-3 hover:bg-sage/30 transition-colors focus-outline" href="#contact">Parler de votre projet</a>
+        </div>
+      </div>
+      <div class="order-1 lg:order-2">
+        <figure class="relative rounded-2.5xl overflow-hidden shadow-soft ring-1 ring-sage/60">
+          <img alt="Chloé Dubois décoratrice d'intérieur" class="w-full h-full object-cover aspect-[4/5]" decoding="async" loading="lazy" src="./assets/portrait/portrait-mon-histoire.webp"/>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- Témoignages -->
+  <section class="mt-20 sm:mt-28">
+    <div class="container">
+      <h2 class="font-display text-3xl sm:text-4xl text-center text-charcoal">Ils me font <span class="text-primary">confiance</span></h2>
+      <div class="mt-8 relative">
+        <div class="overflow-hidden rounded-2.5xl bg-white ring-1 ring-sage/60 shadow-card" id="slider">
+          <div class="whitespace-nowrap transition-transform duration-500 will-change-transform" id="slides">
+            <!-- Slide 1 -->
+            <div class="inline-block align-top w-full min-w-full p-8 whitespace-normal">
+              <div class="max-w-3xl mx-auto flex flex-col sm:flex-row gap-6 items-start">
+                <img alt="Portrait client" class="h-16 w-16 rounded-full object-cover" src="https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?q=80&amp;w=300&amp;auto=format&amp;fit=crop"/>
+                <blockquote class="text-lg leading-7 text-charcoal">
+                  « Un accompagnement d’une qualité exceptionnelle. Grâce à Chloé, nous avons enfin visualisé notre projet, et surtout passé à l’action en toute sérénité. »
+                  <footer class="mt-4 text-sm text-taupe">Marie &amp; Thomas – Rénovation T3 à Annecy</footer>
+                </blockquote>
+              </div>
             </div>
-            
-            <div class="mt-4 grid grid-cols-7 gap-1 text-center text-xs text-taupe">
-              <div>Lun</div><div>Mar</div><div>Mer</div><div>Jeu</div><div>Ven</div><div>Sam</div><div>Dim</div>
+            <!-- Slide 2 -->
+            <div class="inline-block align-top w-full min-w-full p-8 whitespace-normal">
+              <div class="max-w-3xl mx-auto flex flex-col sm:flex-row gap-6 items-start">
+                <img alt="Portrait client" class="h-16 w-16 rounded-full object-cover" src="https://images.unsplash.com/photo-1527980965255-d3b416303d12?q=80&amp;w=300&amp;auto=format&amp;fit=crop"/>
+                <blockquote class="text-lg leading-7 text-charcoal">
+                  « Conseils clairs, moodboards précis, artisans recommandés : tout s’est déroulé comme prévu. »
+                  <footer class="mt-4 text-sm text-taupe">Lucas – Aménagement séjour à Seynod</footer>
+                </blockquote>
+              </div>
             </div>
-            <div class="mt-2 grid grid-cols-7 gap-1">
-              <div class="text-center py-2 text-gray-400">30</div>
-              <button type="button" class="text-center py-2 rounded-full hover:bg-primary/20 focus-outline">1</button>
-              <button type="button" class="text-center py-2 rounded-full hover:bg-primary/20 focus-outline">2</button>
-              <button type="button" class="text-center py-2 rounded-full bg-primary text-white ring-2 ring-primaryDark ring-offset-2 focus-outline">3</button>
-              <button type="button" class="text-center py-2 rounded-full hover:bg-primary/20 focus-outline">4</button>
-              <div class="text-center py-2 text-gray-400 line-through">5</div>
-              <div class="text-center py-2 text-gray-400 line-through">6</div>
-              <button type="button" class="text-center py-2 rounded-full hover:bg-primary/20 focus-outline">7</button>
-              <button type="button" class="text-center py-2 rounded-full hover:bg-primary/20 focus-outline">8</button>
-              <button type="button" class="text-center py-2 rounded-full hover:bg-primary/20 focus-outline">9</button>
-              <button type="button" class="text-center py-2 rounded-full hover:bg-primary/20 focus-outline">10</button>
-              <button type="button" class="text-center py-2 rounded-full hover:bg-primary/20 focus-outline">11</button>
-              <div class="text-center py-2 text-gray-400 line-through">12</div>
-              <div class="text-center py-2 text-gray-400 line-through">13</div>
-            </div>
-          </div>
-          
-          <!-- Faux créneaux horaires -->
-          <div class="mt-6">
-            <h5 class="font-medium text-charcoal">Jeudi 3 Octobre</h5>
-            <div class="mt-3 grid grid-cols-2 sm:grid-cols-3 gap-3">
-              <button type="button" class="w-full rounded-lg border border-primary py-2.5 text-primary font-medium hover:bg-primary hover:text-white transition-colors focus-outline">09:00</button>
-              <button type="button" class="w-full rounded-lg border border-primary py-2.5 text-primary font-medium hover:bg-primary hover:text-white transition-colors focus-outline">09:30</button>
-              <button type="button" class="w-full rounded-lg border border-primary py-2.5 text-primary font-medium hover:bg-primary hover:text-white transition-colors focus-outline">10:15</button>
-              <button type="button" class="w-full rounded-lg border border-primary py-2.5 text-primary font-medium hover:bg-primary hover:text-white transition-colors focus-outline">11:00</button>
-              <button type="button" class="w-full rounded-lg border border-primary py-2.5 text-primary font-medium hover:bg-primary hover:text-white transition-colors focus-outline">11:45</button>
-              <button type="button" class="w-full rounded-lg border border-primary py-2.5 text-primary font-medium hover:bg-primary hover:text-white transition-colors focus-outline">14:00</button>
+            <!-- Slide 3 -->
+            <div class="inline-block align-top w-full min-w-full p-8 whitespace-normal">
+              <div class="max-w-3xl mx-auto flex flex-col sm:flex-row gap-6 items-start">
+                <img alt="Portrait client" class="h-16 w-16 rounded-full object-cover" src="https://images.unsplash.com/photo-1502685104226-ee32379fefbe?q=80&amp;w=300&amp;auto=format&amp;fit=crop"/>
+                <blockquote class="text-lg leading-7 text-charcoal">
+                  « Nous avons adoré l’approche pédagogique, les rendus 3D et la liste shopping. »
+                  <footer class="mt-4 text-sm text-taupe">Hélène – Maison familiale à Cran-Gevrier</footer>
+                </blockquote>
+              </div>
             </div>
           </div>
         </div>
-        
+        <div class="mt-4 flex items-center justify-center gap-2">
+          <button aria-label="Aller au témoignage 1" class="dot h-2.5 w-2.5 rounded-full bg-primary/30"></button>
+          <button aria-label="Aller au témoignage 2" class="dot h-2.5 w-2.5 rounded-full bg-primary/30"></button>
+          <button aria-label="Aller au témoignage 3" class="dot h-2.5 w-2.5 rounded-full bg-primary/30"></button>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- Footer -->
-<footer class="mt-20 sm:mt-28">
-<div class="border-t border-sage/60 bg-linen/60">
-<div class="container py-12 grid md:grid-cols-3 gap-10">
-<div>
-<div class="flex items-center gap-3"><img src="./assets/logo/logo-footer.png?v=5" alt="Harmonie Intérieure — monogramme" width="64" height="64" class="h-10 w-10 md:h-12 md:w-12 rounded-full object-cover shrink-0" decoding="async" loading="lazy"><span class="text-lg font-medium text-[#2c2421]">Harmonie Intérieure</span></div>
-<p class="mt-3 text-taupe max-w-sm">Décoratrice d’intérieur à Annecy. Coaching déco, projets complets et suivi esthétique de chantier.</p>
-<div class="mt-4 flex items-center gap-3">
-<a aria-label="Instagram" class="inline-flex h-9 w-9 items-center justify-center rounded-full ring-1 ring-sage/60 hover:bg-sage/40" href="#">
-<svg fill="none" height="18" viewbox="0 0 24 24" width="18"><rect height="18" rx="5" stroke="currentColor" stroke-width="1.5" width="18" x="3" y="3"></rect><circle cx="12" cy="12" r="3.5" stroke="currentColor" stroke-width="1.5"></circle><circle cx="17.5" cy="6.5" fill="currentColor" r="1"></circle></svg>
-</a>
-<a aria-label="Pinterest" class="inline-flex h-9 w-9 items-center justify-center rounded-full ring-1 ring-sage/60 hover:bg-sage/40" href="#">
-<svg fill="none" height="18" viewbox="0 0 24 24" width="18"><path d="M12 21c4.97 0 9-4.03 9-9s-4.03-9-9-9S3 7.03 3 12c0 3.76 2.33 6.97 5.62 8.24-.08-.7-.15-1.77.03-2.53l1.04-4.44s-.26-.52-.26-1.29c0-1.2.69-2.09 1.55-2.09.73 0 1.08.55 1.08 1.21 0 .74-.47 1.85-.72 2.88-.21.91.45 1.65 1.35 1.65 1.62 0 2.86-1.71 2.86-4.18 0-2.19-1.58-3.72-3.83-3.72-2.61 0-4.15 1.96-4.15 3.98 0 .79.3 1.64.67 2.1l.07.1-.29 1.16c-.09.34-.32 1.14-.34 1.29-.05.2-.17.24-.39.15-1.45-.61-2.36-2.54-2.36-4.09 0-3.33 2.42-6.39 6.98-6.39 3.67 0 6.53 2.62 6.53 6.12 0 3.65-2.29 6.59-5.47 6.59-1.07 0-2.07-.56-2.41-1.22 0 0-.52 2.08-.64 2.5-.19.72-.57 1.44-.92 2.01.83.26 1.71.4 2.63.4Z" fill="currentColor"></path></svg>
-</a>
-</div>
-</div>
-<div>
-<h4 class="font-medium">Navigation</h4>
-<ul class="mt-3 space-y-2 text-taupe">
-<li><a class="hover:text-primary transition-colors" href="#realisations">Réalisations</a></li>
-<li><a class="hover:text-primary transition-colors" href="#services">Services</a></li>
-<li><a class="hover:text-primary transition-colors" href="#histoire">À propos</a></li>
-<li><a class="hover:text-primary transition-colors" href="#faq">FAQ</a></li>
-</ul>
-</div>
-<div>
-<h4 class="font-medium">Me contacter</h4>
-<ul class="mt-3 space-y-2 text-taupe">
-<li><a class="hover:text-primary transition-colors" href="tel:+33600000000">06 00 00 00 00</a></li>
-<li><a class="hover:text-primary transition-colors" href="mailto:contact@harmonie-interieure.fr">contact@harmonie-interieure.fr</a></li>
-<li>Annecy &amp; alentours</li>
-</ul>
-</div>
-</div>
-<div class="border-t border-sage/60">
-<div class="container py-6 text-sm text-taupe flex flex-col sm:flex-row items-center justify-between gap-3">
-<p>© <span id="year"></span> Harmonie Intérieure – Tous droits réservés.</p>
-<a class="text-taupe hover:text-primary" href="#top">Remonter</a>
-</div>
-</div>
-</div>
-</footer>
-<!-- Micro-interactions – scroll reveal, slider, burger, dots actifs -->
-<script>
-    // année dynamique
+  <!-- FAQ -->
+  <section class="mt-20 sm:mt-28" id="faq">
+    <div class="container">
+      <h2 class="font-display text-3xl sm:text-4xl text-center text-charcoal">Vos Questions, <span class="text-primary">Mes Réponses</span></h2>
+      <div class="mx-auto max-w-3xl mt-8 space-y-3">
+        <details class="group rounded-2.5xl bg-white ring-1 ring-sage/60 p-5 shadow-card open:shadow-soft transition-all">
+          <summary class="flex items-center justify-between cursor-pointer list-none">
+            <span class="font-medium">Quel est votre processus de travail ?</span>
+            <svg class="ml-4 transition-transform group-open:rotate-180" fill="none" height="18" viewBox="0 0 24 24" width="18"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-linecap="round" stroke-width="1.5"></path></svg>
+          </summary>
+          <div class="mt-3 text-taupe">Un appel découverte, un rendez-vous sur site, puis des livrables adaptés (plans, moodboards, 3D, shopping list) et un suivi si besoin.</div>
+        </details>
+        <details class="group rounded-2.5xl bg-white ring-1 ring-sage/60 p-5 shadow-card">
+          <summary class="flex items-center justify-between cursor-pointer list-none">
+            <span class="font-medium">Travaillez-vous avec tous les budgets ?</span>
+            <svg class="ml-4 transition-transform group-open:rotate-180" fill="none" height="18" viewBox="0 0 24 24" width="18"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-linecap="round" stroke-width="1.5"></path></svg>
+          </summary>
+          <div class="mt-3 text-taupe">Oui, mes forfaits s’adaptent et nous posons un cadre clair dès le départ.</div>
+        </details>
+        <details class="group rounded-2.5xl bg-white ring-1 ring-sage/60 p-5 shadow-card">
+          <summary class="flex items-center justify-between cursor-pointer list-none">
+            <span class="font-medium">Proposez-vous des plans 3D ?</span>
+            <svg class="ml-4 transition-transform group-open:rotate-180" fill="none" height="18" viewBox="0 0 24 24" width="18"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-linecap="round" stroke-width="1.5"></path></svg>
+          </summary>
+          <div class="mt-3 text-taupe">Bien sûr, c’est souvent le meilleur moyen de se projeter sereinement.</div>
+        </details>
+        <details class="group rounded-2.5xl bg-white ring-1 ring-sage/60 p-5 shadow-card">
+          <summary class="flex items-center justify-between cursor-pointer list-none">
+            <span class="font-medium">Intervenez-vous en dehors d’Annecy ?</span>
+            <svg class="ml-4 transition-transform group-open:rotate-180" fill="none" height="18" viewBox="0 0 24 24" width="18"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-linecap="round" stroke-width="1.5"></path></svg>
+          </summary>
+          <div class="mt-3 text-taupe">Oui dans un rayon raisonnable, et à distance pour certaines prestations.</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT / APPEL DÉCOUVERTE -->
+  <section class="mt-20 sm:mt-28" id="contact">
+    <div class="container">
+      <h2 class="font-display text-3xl sm:text-4xl text-center text-charcoal">Prêt(e) à démarrer votre <span class="text-primary">projet ?</span></h2>
+      <p class="mt-3 text-center text-taupe max-w-2xl mx-auto">Planifions un premier échange gratuit de 15 minutes pour discuter de vos envies et de vos besoins. C'est simple, rapide et sans engagement.</p>
+      <div class="mt-10 max-w-5xl mx-auto bg-white rounded-2.5xl shadow-soft ring-1 ring-sage/60 overflow-hidden">
+        <div class="grid lg:grid-cols-[minmax(0,_1fr)_minmax(0,_2fr)]">
+          <div class="p-6 sm:p-8 border-b lg:border-b-0 lg:border-r border-linen">
+            <figure class="flex items-center gap-3">
+              <img src="./assets/portrait/portrait-mon-histoire.webp" alt="Chloé Dubois" class="h-14 w-14 rounded-full object-cover">
+              <figcaption>
+                <p class="text-sm text-taupe">Chloé Dubois</p>
+                <h3 class="font-display text-xl text-charcoal">Appel Découverte</h3>
+              </figcaption>
+            </figure>
+            <div class="mt-6 space-y-3 text-charcoal">
+              <div class="flex items-center gap-3">
+                <svg class="h-5 w-5 text-taupe" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                <span>15 min</span>
+              </div>
+              <div class="flex items-start gap-3">
+                <svg class="h-5 w-5 text-taupe shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" d="M15.75 10.5l4.72-4.72a.75.75 0 011.28.53v11.38a.75.75 0 01-1.28.53l-4.72-4.72M4.5 18.75h9a2.25 2.25 0 002.25-2.25v-9A2.25 2.25 0 0013.5 5.25h-9A2.25 2.25 0 002.25 7.5v9A2.25 2.25 0 004.5 18.75z"></path></svg>
+                <span>Appel Vidéo (Google Meet)</span>
+              </div>
+            </div>
+            <p class="mt-6 text-sm text-taupe">
+              Cet échange nous permettra de faire connaissance, de comprendre votre projet, vos envies, votre budget et de voir comment je peux vous aider.
+            </p>
+          </div>
+          <div class="p-6 sm:p-8">
+            <h4 class="font-display text-lg text-charcoal">Sélectionnez une date & une heure</h4>
+            <div class="mt-6">
+              <div class="flex items-center justify-between">
+                <button type="button" aria-label="Mois précédent" class="p-2 rounded-full hover:bg-linen focus-outline">
+                  <svg class="h-5 w-5 text-charcoal" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+                </button>
+                <div class="font-medium text-charcoal">Octobre 2024</div>
+                <button type="button" aria-label="Mois suivant" class="p-2 rounded-full hover:bg-linen focus-outline">
+                  <svg class="h-5 w-5 text-charcoal" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                </button>
+              </div>
+              <div class="mt-4 grid grid-cols-7 gap-1 text-center text-xs text-taupe">
+                <div>Lun</div><div>Mar</div><div>Mer</div><div>Jeu</div><div>Ven</div><div>Sam</div><div>Dim</div>
+              </div>
+              <div class="mt-2 grid grid-cols-7 gap-1">
+                <div class="text-center py-2 text-gray-400">30</div>
+                <button type="button" class="text-center py-2 rounded-full hover:bg-primary/20 focus-outline">1</button>
+                <button type="button" class="text-center py-2 rounded-full hover:bg-primary/20 focus-outline">2</button>
+                <button type="button" class="text-center py-2 rounded-full bg-primary text-white ring-2 ring-primaryDark ring-offset-2 focus-outline">3</button>
+                <button type="button" class="text-center py-2 rounded-full hover:bg-primary/20 focus-outline">4</button>
+                <div class="text-center py-2 text-gray-400 line-through">5</div>
+                <div class="text-center py-2 text-gray-400 line-through">6</div>
+                <button type="button" class="text-center py-2 rounded-full hover:bg-primary/20 focus-outline">7</button>
+                <button type="button" class="text-center py-2 rounded-full hover:bg-primary/20 focus-outline">8</button>
+                <button type="button" class="text-center py-2 rounded-full hover:bg-primary/20 focus-outline">9</button>
+                <button type="button" class="text-center py-2 rounded-full hover:bg-primary/20 focus-outline">10</button>
+                <button type="button" class="text-center py-2 rounded-full hover:bg-primary/20 focus-outline">11</button>
+                <div class="text-center py-2 text-gray-400 line-through">12</div>
+                <div class="text-center py-2 text-gray-400 line-through">13</div>
+              </div>
+            </div>
+            <div class="mt-6">
+              <h5 class="font-medium text-charcoal">Jeudi 3 Octobre</h5>
+              <div class="mt-3 grid grid-cols-2 sm:grid-cols-3 gap-3">
+                <button type="button" class="w-full rounded-lg border border-primary py-2.5 text-primary font-medium hover:bg-primary hover:text-white transition-colors focus-outline">09:00</button>
+                <button type="button" class="w-full rounded-lg border border-primary py-2.5 text-primary font-medium hover:bg-primary hover:text-white transition-colors focus-outline">09:30</button>
+                <button type="button" class="w-full rounded-lg border border-primary py-2.5 text-primary font-medium hover:bg-primary hover:text-white transition-colors focus-outline">10:15</button>
+                <button type="button" class="w-full rounded-lg border border-primary py-2.5 text-primary font-medium hover:bg-primary hover:text-white transition-colors focus-outline">11:00</button>
+                <button type="button" class="w-full rounded-lg border border-primary py-2.5 text-primary font-medium hover:bg-primary hover:text-white transition-colors focus-outline">11:45</button>
+                <button type="button" class="w-full rounded-lg border border-primary py-2.5 text-primary font-medium hover:bg-primary hover:text-white transition-colors focus-outline">14:00</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="mt-20 sm:mt-28">
+    <div class="border-t border-sage/60 bg-linen/60">
+      <div class="container py-12 grid md:grid-cols-3 gap-10">
+        <div>
+          <div class="flex items-center gap-3">
+            <img src="./assets/logo/logo-footer.png?v=5" alt="Harmonie Intérieure — monogramme" width="64" height="64" class="h-10 w-10 md:h-12 md:w-12 rounded-full object-cover shrink-0" decoding="async" loading="lazy">
+            <span class="text-lg font-medium text-[#2c2421]">Harmonie Intérieure</span>
+          </div>
+          <p class="mt-3 text-taupe max-w-sm">Décoratrice d’intérieur à Annecy. Coaching déco, projets complets et suivi esthétique de chantier.</p>
+          <div class="mt-4 flex items-center gap-3">
+            <a aria-label="Instagram" class="inline-flex h-9 w-9 items-center justify-center rounded-full ring-1 ring-sage/60 hover:bg-sage/40" href="#">
+              <svg fill="none" height="18" viewBox="0 0 24 24" width="18"><rect height="18" rx="5" stroke="currentColor" stroke-width="1.5" width="18" x="3" y="3"></rect><circle cx="12" cy="12" r="3.5" stroke="currentColor" stroke-width="1.5"></circle><circle cx="17.5" cy="6.5" fill="currentColor" r="1"></circle></svg>
+            </a>
+            <a aria-label="Pinterest" class="inline-flex h-9 w-9 items-center justify-center rounded-full ring-1 ring-sage/60 hover:bg-sage/40" href="#">
+              <svg fill="none" height="18" viewBox="0 0 24 24" width="18"><path d="M12 21c4.97 0 9-4.03 9-9s-4.03-9-9-9S3 7.03 3 12c0 3.76 2.33 6.97 5.62 8.24-.08-.7-.15-1.77.03-2.53l1.04-4.44s-.26-.52-.26-1.29c0-1.2.69-2.09 1.55-2.09.73 0 1.08.55 1.08 1.21 0 .74-.47 1.85-.72 2.88-.21.91.45 1.65 1.35 1.65 1.62 0 2.86-1.71 2.86-4.18 0-2.19-1.58-3.72-3.83-3.72-2.61 0-4.15 1.96-4.15 3.98 0 .79.3 1.64.67 2.1l.07.1-.29 1.16c-.09.34-.32 1.14-.34 1.29-.05.2-.17.24-.39.15-1.45-.61-2.36-2.54-2.36-4.09 0-3.33 2.42-6.39 6.98-6.39 3.67 0 6.53 2.62 6.53 6.12 0 3.65-2.29 6.59-5.47 6.59-1.07 0-2.07-.56-2.41-1.22 0 0-.52 2.08-.64 2.5-.19.72-.57 1.44-.92 2.01.83.26 1.71.4 2.63.4Z" fill="currentColor"></path></svg>
+            </a>
+          </div>
+        </div>
+        <div>
+          <h4 class="font-medium">Navigation</h4>
+          <ul class="mt-3 space-y-2 text-taupe">
+            <li><a class="hover:text-primary transition-colors" href="#realisations">Réalisations</a></li>
+            <li><a class="hover:text-primary transition-colors" href="#services">Services</a></li>
+            <li><a class="hover:text-primary transition-colors" href="#histoire">À propos</a></li>
+            <li><a class="hover:text-primary transition-colors" href="#faq">FAQ</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-medium">Me contacter</h4>
+          <ul class="mt-3 space-y-2 text-taupe">
+            <li><a class="hover:text-primary transition-colors" href="tel:+33600000000">06 00 00 00 00</a></li>
+            <li><a class="hover:text-primary transition-colors" href="mailto:contact@harmonie-interieure.fr">contact@harmonie-interieure.fr</a></li>
+            <li>Annecy &amp; alentours</li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-sage/60">
+        <div class="container py-6 text-sm text-taupe flex flex-col sm:flex-row items-center justify-between gap-3">
+          <p>© <span id="year"></span> Harmonie Intérieure – Tous droits réservés.</p>
+          <a class="text-taupe hover:text-primary" href="#top">Remonter</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script>
     document.getElementById('year').textContent = new Date().getFullYear();
-
-    // Burger
     const burger = document.getElementById('burger');
     const drawer = document.getElementById('drawer');
     if (burger) burger.addEventListener('click', () => drawer.classList.toggle('hidden'));
-
-    // Slider avis
     const slides = document.getElementById('slides');
     const dots = Array.from(document.querySelectorAll('.dot'));
     let index = 0, total = dots.length;
@@ -528,8 +539,6 @@
     dots.forEach((d,i)=> d.addEventListener('click', ()=>go(i)));
     setInterval(()=>go(index+1), 6000);
     go(0);
-
-    // Révélations au scroll
     const observer = new IntersectionObserver((entries)=>{
       entries.forEach(e=>{
         if(e.isIntersecting){
@@ -542,117 +551,71 @@
       el.style.opacity=0; el.style.transform='translateY(12px)';
       observer.observe(el);
     });
-
-    // Smooth anchor (fallback iOS)
     document.querySelectorAll('a[href^="#"]').forEach(a=>{
       a.addEventListener('click', (e)=>{
         const id = a.getAttribute('href');
         const el = document.querySelector(id);
-        if(el){ e.preventDefault(); window.scrollTo({top: el.getBoundingClientRect().top + window.pageYOffset - 72, behavior:'smooth'});
+        if(el){ e.preventDefault(); window.scrollTo({top: el.getBoundingClientRect().top + window.pageYOffset - 80, behavior:'smooth'});
           if(!drawer.classList.contains('hidden')) drawer.classList.add('hidden'); }
       })
     });
   </script>
-<div class="inset-0 justify-center z-50 items-center p-4 hidden flex fixed bg-black/70" id="lightbox-overlay"><button aria-label="Fermer l'image" class="absolute top-4 right-4 inline-flex h-10 w-10 items-center justify-center rounded-full bg-white/90 text-[#2c2421] shadow ring-1 ring-black/5 hover:bg-white transition" type="button">×</button><img alt="" class="max-h-[90vh] max-w-[90vw] rounded-2xl shadow-2xl object-contain will-change-transform" decoding="async" id="lightbox-img" loading="eager"/><button class="absolute top-1/2 -translate-y-1/2 inline-flex h-12 w-12 items-center justify-center rounded-full bg-white/90 text-[#2c2421] shadow ring-1 ring-black/5 hover:bg-white transition left-4" data-dir="prev" type="button">‹</button><button class="absolute top-1/2 -translate-y-1/2 inline-flex h-12 w-12 items-center justify-center rounded-full bg-white/90 text-[#2c2421] shadow ring-1 ring-black/5 hover:bg-white transition right-4" data-dir="next" type="button">›</button></div><script id="lightbox-script">
-document.addEventListener('DOMContentLoaded', function () {
-  const overlay = document.getElementById('lightbox-overlay');
-  const img = document.getElementById('lightbox-img');
-  const btnClose = overlay.querySelector('button[aria-label]');
-  const btnPrev = overlay.querySelector('button[data-dir="prev"]');
-  const btnNext = overlay.querySelector('button[data-dir="next"]');
-
-  const cards = Array.from(document.querySelectorAll('a[data-lightbox-src]'));
-  let currentIndex = -1;
-
-  function openLightboxByIndex(index) {
-    if (index < 0 || index >= cards.length) return;
-    currentIndex = index;
-    const a = cards[index];
-    openLightbox(a.getAttribute('data-lightbox-src'), a.getAttribute('data-lightbox-alt') || '');
-  }
-
-  function openLightbox(src, alt) {
-    img.src = src;
-    img.alt = alt || '';
-    // reset transform
-    scale = 1; translateX = 0; translateY = 0; applyTransform();
-    overlay.classList.remove('hidden');
-    document.documentElement.classList.add('overflow-y-hidden');
-  }
-
-  function closeLightbox() {
-    overlay.classList.add('hidden');
-    document.documentElement.classList.remove('overflow-y-hidden');
-    img.removeAttribute('src');
-  }
-
-  // --- Zoom & Pan ---
-  let scale = 1, translateX = 0, translateY = 0;
-  const MIN_SCALE = 1, MAX_SCALE = 4, STEP = 0.1;
-
-  function applyTransform() {
-    img.style.transform = `translate(${translateX}px, ${translateY}px) scale(${scale})`;
-  }
-
-  overlay.addEventListener('wheel', (e) => {
-    if (!img.src) return;
-    e.preventDefault();
-    const delta = e.deltaY < 0 ? 1 : -1;
-    let newScale = scale + delta * STEP;
-    newScale = Math.min(MAX_SCALE, Math.max(MIN_SCALE, newScale));
-    // zoom relative to center of image container (simple approach)
-    // adjust translation proportionally to keep image centered visually
-    const factor = newScale / scale;
-    translateX *= factor;
-    translateY *= factor;
-    scale = newScale;
-    applyTransform();
-  }, { passive: false });
-
-  let isDragging = false, startX = 0, startY = 0;
-  overlay.addEventListener('mousedown', (e) => {
-    // allow drag only when image is zoomed in
-    if (scale <= 1 || e.target !== img) return;
-    isDragging = true;
-    startX = e.clientX - translateX;
-    startY = e.clientY - translateY;
-  });
-  window.addEventListener('mousemove', (e) => {
-    if (!isDragging) return;
-    translateX = e.clientX - startX;
-    translateY = e.clientY - startY;
-    applyTransform();
-  });
-  window.addEventListener('mouseup', () => { isDragging = false; });
-
-  // --- Navigation ---
-  function showPrev() { openLightboxByIndex((currentIndex - 1 + cards.length) % cards.length); }
-  function showNext() { openLightboxByIndex((currentIndex + 1) % cards.length); }
-
-  btnPrev.addEventListener('click', (e) => { e.stopPropagation(); showPrev(); });
-  btnNext.addEventListener('click', (e) => { e.stopPropagation(); showNext(); });
-
-  document.addEventListener('keydown', (e) => {
-    if (overlay.classList.contains('hidden')) return;
-    if (e.key === 'Escape') closeLightbox();
-    if (e.key === 'ArrowLeft') showPrev();
-    if (e.key === 'ArrowRight') showNext();
-  });
-
-  // open from cards
-  cards.forEach((a, i) => {
-    a.addEventListener('click', (e) => {
-      e.preventDefault();
-      openLightboxByIndex(i);
+  
+  <!-- Lightbox (Galerie d'images) -->
+  <div class="inset-0 justify-center z-50 items-center p-4 hidden flex fixed bg-black/70" id="lightbox-overlay">
+    <button aria-label="Fermer l'image" class="absolute top-4 right-4 inline-flex h-10 w-10 items-center justify-center rounded-full bg-white/90 text-[#2c2421] shadow ring-1 ring-black/5 hover:bg-white transition" type="button">×</button>
+    <img alt="" class="max-h-[90vh] max-w-[90vw] rounded-2xl shadow-2xl object-contain will-change-transform" decoding="async" id="lightbox-img" loading="eager"/>
+    <button class="absolute top-1/2 -translate-y-1/2 inline-flex h-12 w-12 items-center justify-center rounded-full bg-white/90 text-[#2c2421] shadow ring-1 ring-black/5 hover:bg-white transition left-4" data-dir="prev" type="button">‹</button>
+    <button class="absolute top-1/2 -translate-y-1/2 inline-flex h-12 w-12 items-center justify-center rounded-full bg-white/90 text-[#2c2421] shadow ring-1 ring-black/5 hover:bg-white transition right-4" data-dir="next" type="button">›</button>
+  </div>
+  <script id="lightbox-script">
+    document.addEventListener('DOMContentLoaded', function () {
+      const overlay = document.getElementById('lightbox-overlay');
+      const img = document.getElementById('lightbox-img');
+      const btnClose = overlay.querySelector('button[aria-label]');
+      const btnPrev = overlay.querySelector('button[data-dir="prev"]');
+      const btnNext = overlay.querySelector('button[data-dir="next"]');
+      const cards = Array.from(document.querySelectorAll('a[data-lightbox-src]'));
+      let currentIndex = -1;
+      function openLightboxByIndex(index) {
+        if (index < 0 || index >= cards.length) return;
+        currentIndex = index;
+        const a = cards[index];
+        openLightbox(a.getAttribute('data-lightbox-src'), a.getAttribute('data-lightbox-alt') || '');
+      }
+      function openLightbox(src, alt) {
+        img.src = src;
+        img.alt = alt || '';
+        overlay.classList.remove('hidden');
+        document.documentElement.classList.add('overflow-y-hidden');
+      }
+      function closeLightbox() {
+        overlay.classList.add('hidden');
+        document.documentElement.classList.remove('overflow-y-hidden');
+        img.removeAttribute('src');
+      }
+      function showPrev() { openLightboxByIndex((currentIndex - 1 + cards.length) % cards.length); }
+      function showNext() { openLightboxByIndex((currentIndex + 1) % cards.length); }
+      btnPrev.addEventListener('click', (e) => { e.stopPropagation(); showPrev(); });
+      btnNext.addEventListener('click', (e) => { e.stopPropagation(); showNext(); });
+      document.addEventListener('keydown', (e) => {
+        if (overlay.classList.contains('hidden')) return;
+        if (e.key === 'Escape') closeLightbox();
+        if (e.key === 'ArrowLeft') showPrev();
+        if (e.key === 'ArrowRight') showNext();
+      });
+      cards.forEach((a, i) => {
+        a.addEventListener('click', (e) => {
+          e.preventDefault();
+          openLightboxByIndex(i);
+        });
+      });
+      overlay.addEventListener('click', (e) => {
+        if (e.target === overlay) closeLightbox();
+      });
+      btnClose.addEventListener('click', closeLightbox);
     });
-  });
+  </script>
 
-  // Close overlay on backdrop click
-  overlay.addEventListener('click', (e) => {
-    // only close if click is on the overlay, not on the image or buttons
-    if (e.target === overlay) closeLightbox();
-  });
-  btnClose.addEventListener('click', closeLightbox);
-});
-</script></body>
+</body>
 </html>
