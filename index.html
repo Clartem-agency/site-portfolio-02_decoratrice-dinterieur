@@ -114,20 +114,23 @@
         class="absolute inset-0 w-full h-full object-cover -z-20"
       />
       
-      <!-- 1. Superposition (overlay) RENFORCÉE pour garantir la lisibilité -->
-      <div class="absolute inset-0 bg-gradient-to-t from-charcoal/80 via-charcoal/40 to-charcoal/10 -z-10"></div>
+      <!-- MODIFICATION: Superposition (overlay) changée pour un fond clair et uniforme pour une meilleure lisibilité -->
+      <div class="absolute inset-0 bg-cream/60 -z-10"></div>
 
       <!-- Contenu textuel centré par-dessus -->
-      <div class="relative text-center px-4">
-        <!-- 2. Ajout d'une ombre portée (text-shadow) pour "décoller" le texte -->
-        <h1 class="font-display text-4xl/[1.1] sm:text-5xl lg:text-6xl text-shadow text-charcoal">
+      <div class="relative text-center text-charcoal px-4">
+        
+        <!-- Titre avec couleurs spécifiques, maintenant lisible -->
+        <h1 class="font-display text-4xl/[1.1] sm:text-5xl lg:text-6xl text-charcoal">
           Créez un intérieur qui vous ressemble,<br class="hidden sm:block"/> <span class="text-primary">sans les doutes</span>
         </h1>
-        <p class="mt-5 text-[17px] leading-7 text-cream/95 max-w-2xl mx-auto text-shadow-sm">
+        
+        <!-- Paragraphe avec couleur adaptée au nouveau fond -->
+        <p class="mt-5 text-[17px] leading-7 text-taupe max-w-2xl mx-auto">
           Conseils en décoration et accompagnement pour les primo-accédants et les rénovations à Annecy. Je vous aide à transformer votre espace en un véritable cocon de bien-être.
         </p>
 
-        <!-- Boutons (inchangés, le contraste est maintenant bon) -->
+        <!-- Boutons adaptés au fond clair -->
         <div class="mt-8 flex flex-col sm:flex-row gap-4 sm:gap-5 items-center justify-center">
           <a class="ring-1 ring-black/5 hover:bg-primaryDark group relative inline-flex items-center gap-3 rounded-[40px] px-7 py-3.5 bg-primary text-white font-semibold transition-all duration-300 will-change-transform shadow-[0_8px_24px_rgba(44,36,33,.25)] hover:-translate-y-0.5 hover:shadow-[0_14px_36px_rgba(44,36,33,.30)] active:translate-y-0 focus:outline-none focus-visible:ring-4 focus-visible:ring-primary/25" href="#services">
             <span class="relative z-10">Découvrir mes accompagnements</span>
@@ -135,7 +138,7 @@
               <path d="M5 12h14M13 5l7 7-7 7" stroke="currentColor" stroke-linecap="round" stroke-width="1.5"></path>
             </svg>
           </a>
-          <a class="group relative inline-flex items-center gap-3 rounded-[40px] px-7 py-3.5 bg-white/10 text-white ring-1 ring-white/50 backdrop-blur-sm transition-all duration-300 hover:bg-white/20 hover:ring-white focus:outline-none focus-visible:ring-4 focus-visible:ring-white/30" href="#contact">
+          <a class="group relative inline-flex items-center gap-3 rounded-[40px] px-7 py-3.5 text-charcoal ring-1 ring-charcoal/20 backdrop-blur-sm transition-all duration-300 hover:bg-white/50 hover:ring-charcoal/30 focus:outline-none focus-visible:ring-4 focus-visible:ring-primary/30" href="#contact">
             <span>Réserver un appel découverte</span>
             <svg aria-hidden="true" class="transition-transform group-hover:translate-x-0.5" fill="none" height="18" viewbox="0 0 24 24" width="18">
               <path d="M5 12h14M13 5l7 7-7 7" stroke="currentColor" stroke-linecap="round" stroke-width="1.5"></path>
