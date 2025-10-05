@@ -1,14 +1,15 @@
---- START OF FILE admin/index.html ---
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="fr">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Administration du Contenu | Harmonie Intérieure</title>
+  <title>Administration - Harmonie Intérieure</title>
   <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
 <body>
-  <!-- Include the script that builds the page and powers Decap CMS -->
   <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+  <script>
+    CMS.registerPreviewStyle("/admin/preview.css");
+  </script>
 </body>
 </html>
