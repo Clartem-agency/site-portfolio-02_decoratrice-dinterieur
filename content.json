@@ -1,0 +1,283 @@
+--- START OF FILE content.json ---
+{
+  "meta": {
+    "title": "Chloé Dubois – Décoratrice d’Intérieur à Annecy | Harmonie Intérieure",
+    "description": "Conseils en décoration & accompagnement pour primo-accédants et rénovations à Annecy. Coaching déco, projets complets, suivi de chantier. Appel découverte offert.",
+    "favicon_32": "./assets/logo/favicon-32.png",
+    "favicon_192": "./assets/logo/favicon-192.png",
+    "apple_touch_icon": "./assets/logo/apple-touch-icon.png",
+    "theme_color": "#ffffff"
+  },
+  "navigation": {
+    "logo": "./assets/logo/logo-header.png",
+    "logo_alt": "Harmonie Intérieure — logo",
+    "logo_sr_text": "Harmonie Intérieure",
+    "links": [
+      {
+        "label": "Réalisations",
+        "href": "#realisations"
+      },
+      {
+        "label": "Services",
+        "href": "#services"
+      },
+      {
+        "label": "À propos",
+        "href": "#histoire"
+      },
+      {
+        "label": "FAQ",
+        "href": "#faq"
+      }
+    ],
+    "cta": {
+      "label": "Prendre RDV",
+      "href": "#contact"
+    }
+  },
+  "hero": {
+    "background_image": "./assets/hero/hero-harmonie-interieure.webp",
+    "background_alt": "Salon lumineux et végétal, un intérieur harmonieux",
+    "title_part1": "Créez un intérieur qui vous ressemble,",
+    "title_highlight": "sans les doutes",
+    "subtitle": "Conseils en décoration et accompagnement pour les primo-accédants et les rénovations à Annecy. Je vous aide à transformer votre espace en un véritable cocon de bien-être.",
+    "cta1": {
+      "label": "Découvrir mes accompagnements",
+      "href": "#services"
+    },
+    "cta2": {
+      "label": "Réserver un appel découverte",
+      "href": "#contact"
+    }
+  },
+  "realisations": {
+    "title": "Mes",
+    "title_highlight": "Réalisations",
+    "projects": [
+      {
+        "image": "./assets/realisations/salon-epure-annecy.webp",
+        "alt": "Salon épuré à Annecy",
+        "caption": "Salon épuré à Annecy"
+      },
+      {
+        "image": "./assets/realisations/suite-parentale-chaleureuse.webp",
+        "alt": "Suite parentale chaleureuse",
+        "caption": "Suite parentale chaleureuse"
+      },
+      {
+        "image": "./assets/realisations/entree-fonctionnelle.webp",
+        "alt": "Entrée fonctionnelle",
+        "caption": "Entrée fonctionnelle"
+      },
+      {
+        "image": "./assets/realisations/cuisine-bois-blanc.webp",
+        "alt": "Cuisine bois & blanc",
+        "caption": "Cuisine bois & blanc"
+      },
+      {
+        "image": "./assets/realisations/bibliotheque-sur-mesure.webp",
+        "alt": "Bibliothèque sur mesure",
+        "caption": "Bibliothèque sur mesure"
+      },
+      {
+        "image": "./assets/realisations/espace-travail-lumineux.webp",
+        "alt": "Espace de travail lumineux",
+        "caption": "Espace de travail lumineux"
+      }
+    ]
+  },
+  "services": {
+    "title": "Mes Accompagnements sur",
+    "title_highlight": "Mesure",
+    "cards": [
+      {
+        "icon_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5\" /><path d=\"M9 18h6\" /><path d=\"M10 22h4\" /></svg>",
+        "title": "Coaching Déco Flash",
+        "description": "Idéal pour une pièce unique ou pour débloquer une situation. En 2h, en visio ou chez vous, nous validons vos choix de couleurs, l'agencement ou votre shopping-list pour vous donner confiance.",
+        "tag_text": "À partir de 290€",
+        "link_label": "En savoir plus",
+        "link_href": "#contact",
+        "is_popular": false
+      },
+      {
+        "icon_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"3\" y=\"3\" width=\"18\" height=\"18\" rx=\"2\" ry=\"2\"></rect><line x1=\"3\" y1=\"9\" x2=\"21\" y2=\"9\"></line><line x1=\"9\" y1=\"21\" x2=\"9\" y2=\"9\"></line></svg>",
+        "title": "Projet de Décoration Complet",
+        "description": "La formule la plus populaire. De la planche d'ambiance aux plans 3D, en passant par la sélection du mobilier et des matériaux, je conçois pour vous un projet clé en main et un intérieur harmonieux.",
+        "tag_text": "Sur devis",
+        "link_label": "Demander un devis",
+        "link_href": "#contact",
+        "is_popular": true
+      },
+      {
+        "icon_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2\"></path><rect x=\"8\" y=\"2\" width=\"8\" height=\"4\" rx=\"1\" ry=\"1\"></rect><path d=\"m9 14 2 2 4-4\"></path></svg>",
+        "title": "Suivi Esthétique de Chantier",
+        "description": "Pour les projets de rénovation complète. Je collabore avec vos artisans pour m'assurer que chaque détail de la conception est parfaitement exécuté, et je gère pour vous le shopping et l'installation.",
+        "tag_text": "Sur devis",
+        "link_label": "Discuter du besoin",
+        "link_href": "#contact",
+        "is_popular": false
+      }
+    ]
+  },
+  "about": {
+    "title": "Mon",
+    "title_highlight": "Histoire",
+    "paragraphs": [
+      {
+        "text": "Après plusieurs années dans un univers professionnel exigeant, j'ai réalisé que mon environnement avait un impact direct sur mon énergie et mon bien-être. C'est en redessinant mon propre appartement que j'ai eu une révélation : créer un intérieur harmonieux n'est pas une question de luxe, mais d'équilibre."
+      },
+      {
+        "text": "J'ai alors décidé de me former et de faire de cette passion mon métier. Aujourd'hui, ma mission est d'aider les personnes qui se sentent perdues face aux milliers de choix possibles. Je crois profondément qu'un foyer doit être un refuge, une source de joie et un reflet de ceux qui y vivent."
+      },
+      {
+        "text": "Mon approche est basée sur l'écoute, la bienveillance et la co-création pour que votre projet soit avant tout une aventure sereine et excitante."
+      }
+    ],
+    "cta1": {
+      "label": "Voir mes réalisations",
+      "href": "#realisations"
+    },
+    "cta2": {
+      "label": "Parler de votre projet",
+      "href": "#contact"
+    },
+    "image": "./assets/portrait/portrait-mon-histoire.webp",
+    "image_alt": "Chloé Dubois décoratrice d'intérieur"
+  },
+  "testimonials": {
+    "title": "Ils me font",
+    "title_highlight": "confiance",
+    "reviews": [
+      {
+        "author_image": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?q=80&w=300&auto=format&fit=crop",
+        "author_alt": "Portrait client Paul & Léa M.",
+        "quote": "Nous étions complètement perdus pour notre premier appartement. Chloé a été d'une patience et d'une écoute incroyables. Elle a su traduire nos envies confuses en un projet clair et un résultat qui nous ressemble à 100%. Notre 'chez-nous' est devenu notre cocon, merci !",
+        "author_info": "Paul & Léa M. – Primo-accédants à Annecy"
+      },
+      {
+        "author_image": "https://images.unsplash.com/photo-1527980965255-d3b416303d12?q=80&w=300&auto=format&fit=crop",
+        "author_alt": "Portrait client Sophie D.",
+        "quote": "Je voulais rénover la maison de mes parents sans en dénaturer l'âme. Chloé a un talent fou pour révéler le potentiel d'un lieu tout en respectant son histoire. Son sens du détail et ses choix de matériaux ont tout changé. Le résultat est au-delà de mes espérances.",
+        "author_info": "Sophie D. – Rénovation à Talloires"
+      },
+      {
+        "author_image": "https://images.unsplash.com/photo-1502685104226-ee32379fefbe?q=80&w=300&auto=format&fit=crop",
+        "author_alt": "Portrait client Marie & Thomas L.",
+        "quote": "Un accompagnement d'une qualité exceptionnelle. Chloé nous a guidés avec bienveillance tout au long de notre projet. Sa vision créative et son professionnalisme ont transformé notre maison en un véritable havre de paix.",
+        "author_info": "Marie & Thomas L. – Rénovation à Menthon-Saint-Bernard"
+      }
+    ]
+  },
+  "faq": {
+    "title": "Vos Questions,",
+    "title_highlight": "Mes Réponses",
+    "questions": [
+      {
+        "question": "Quel est votre processus de travail ?",
+        "answer": "<p>Notre collaboration se déroule en plusieurs étapes claires pour garantir un projet fluide et sans surprise :</p><ol class=\"list-decimal list-inside mt-2 space-y-2\"><li><strong>L'Appel Découverte (offert) :</strong> Un premier échange pour comprendre vos besoins, vos envies et la personnalité que vous souhaitez donner à votre intérieur.</li><li><strong>La Phase Conception :</strong> Selon la formule choisie, je vous présente des planches d'ambiance, des plans 2D/3D et une sélection de mobilier et matériaux. Nous affinons ensemble jusqu'à obtenir le projet parfait.</li><li><strong>La Phase Réalisation :</strong> Je vous fournis un dossier complet (shopping list détaillée, références couleurs/matériaux) pour que vous puissiez réaliser le projet vous-même, ou je peux vous accompagner pour le suivi esthétique du chantier.</li></ol>"
+      },
+      {
+        "question": "Travaillez-vous avec tous les budgets ?",
+        "answer": "<p>Absolument. Mon objectif est de rendre la décoration d'intérieur accessible. Que vous ayez besoin d'un simple \"Coaching Déco Flash\" pour débloquer une situation, ou d'un projet complet, nous trouverons une solution adaptée. La transparence est primordiale : nous définissons ensemble le périmètre de ma mission et le budget associé dès notre premier rendez-vous. Pas de mauvaise surprise !</p>"
+      },
+      {
+        "question": "Proposez-vous des plans 3D ?",
+        "answer": "<p>Oui, les plans et visuels 3D sont inclus dans mes offres de \"Projet Complet\". C'est un outil formidable qui vous permet de visualiser les volumes, la circulation, l'harmonie des couleurs et des matériaux avant même de commencer les travaux. Cela vous aide à prendre des décisions en toute confiance et à éviter des erreurs coûteuses.</p>"
+      },
+      {
+        "question": "Intervenez-vous en dehors d’Annecy ?",
+        "answer": "<p>J'interviens principalement à Annecy et ses alentours (bassin annécien, bords du lac). Pour les projets plus éloignés, nous pouvons en discuter. De plus, le \"Coaching Déco Flash\" et certaines phases de conception peuvent tout à fait se réaliser à distance en visioconférence, où que vous soyez en France.</p>"
+      },
+      {
+        "question": "Et si je n'aime pas vos propositions ?",
+        "answer": "<p>C'est une excellente question et une crainte légitime ! Mon processus est basé sur la co-création. Nous validons chaque étape ensemble. Les planches d'ambiance nous assurent que nous partageons la même vision esthétique avant d'aller plus loin. De plus, mes forfaits incluent généralement une ou plusieurs séries d'ajustements pour que le projet final vous corresponde à 100%.</p>"
+      }
+    ],
+    "outro_text": "Vous avez une autre question ?",
+    "cta_label": "Discutons-en ensemble",
+    "cta_href": "#contact"
+  },
+  "contact": {
+    "title": "Prêt(e) à démarrer votre",
+    "title_highlight": "projet ?",
+    "subtitle": "Planifions un premier échange gratuit de 15 minutes pour discuter de vos envies et de vos besoins. C'est simple, rapide et sans engagement.",
+    "portrait_image": "./assets/portrait/portrait-mon-histoire.webp",
+    "portrait_alt": "Chloé Dubois",
+    "name": "Chloé Dubois",
+    "session_title": "Appel Découverte",
+    "duration": "15 min",
+    "method": "Appel Vidéo (Google Meet)",
+    "description": "Cet échange nous permettra de faire connaissance, de comprendre votre projet, vos envies, votre budget et de voir comment je peux vous aider.",
+    "calendar_title": "Sélectionnez une date & une heure",
+    "calendar_month": "Octobre 2024",
+    "calendar_selected_day": "Jeudi 3 Octobre",
+    "time_slots": [
+      {
+        "time": "09:00"
+      },
+      {
+        "time": "09:30"
+      },
+      {
+        "time": "10:15"
+      },
+      {
+        "time": "11:00"
+      },
+      {
+        "time": "11:45"
+      },
+      {
+        "time": "14:00"
+      }
+    ]
+  },
+  "footer": {
+    "logo": "./assets/logo/logo-footer.png?v=5",
+    "logo_alt": "Harmonie Intérieure — monogramme",
+    "brand_name": "Harmonie Intérieure",
+    "description": "Décoratrice d’intérieur à Annecy. Coaching déco, projets complets et suivi esthétique de chantier.",
+    "socials": [
+      {
+        "platform": "Instagram",
+        "url": "#",
+        "icon_svg": "<svg fill=\"none\" height=\"18\" viewBox=\"0 0 24 24\" width=\"18\"><rect height=\"18\" rx=\"5\" stroke=\"currentColor\" stroke-width=\"1.5\" width=\"18\" x=\"3\" y=\"3\"></rect><circle cx=\"12\" cy=\"12\" r=\"3.5\" stroke=\"currentColor\" stroke-width=\"1.5\"></circle><circle cx=\"17.5\" cy=\"6.5\" fill=\"currentColor\" r=\"1\"></circle></svg>"
+      },
+      {
+        "platform": "Pinterest",
+        "url": "#",
+        "icon_svg": "<svg fill=\"none\" height=\"18\" viewBox=\"0 0 24 24\" width=\"18\"><path d=\"M12 21c4.97 0 9-4.03 9-9s-4.03-9-9-9S3 7.03 3 12c0 3.76 2.33 6.97 5.62 8.24-.08-.7-.15-1.77.03-2.53l1.04-4.44s-.26-.52-.26-1.29c0-1.2.69-2.09 1.55-2.09.73 0 1.08.55 1.08 1.21 0 .74-.47 1.85-.72 2.88-.21.91.45 1.65 1.35 1.65 1.62 0 2.86-1.71 2.86-4.18 0-2.19-1.58-3.72-3.83-3.72-2.61 0-4.15 1.96-4.15 3.98 0 .79.3 1.64.67 2.1l.07.1-.29 1.16c-.09.34-.32 1.14-.34 1.29-.05.2-.17.24-.39.15-1.45-.61-2.36-2.54-2.36-4.09 0-3.33 2.42-6.39 6.98-6.39 3.67 0 6.53 2.62 6.53 6.12 0 3.65-2.29 6.59-5.47 6.59-1.07 0-2.07-.56-2.41-1.22 0 0-.52 2.08-.64 2.5-.19.72-.57 1.44-.92 2.01.83.26 1.71.4 2.63.4Z\" fill=\"currentColor\"></path></svg>"
+      }
+    ],
+    "nav_links": [
+      {
+        "label": "Réalisations",
+        "href": "#realisations"
+      },
+      {
+        "label": "Services",
+        "href": "#services"
+      },
+      {
+        "label": "À propos",
+        "href": "#histoire"
+      },
+      {
+        "label": "FAQ",
+        "href": "#faq"
+      }
+    ],
+    "contact_info": [
+      {
+        "text": "06 00 00 00 00",
+        "url": "tel:+33600000000"
+      },
+      {
+        "text": "contact@harmonie-interieure.fr",
+        "url": "mailto:contact@harmonie-interieure.fr"
+      }
+    ],
+    "location": "Annecy & alentours",
+    "copyright": "Harmonie Intérieure – Tous droits réservés."
+  }
+}
