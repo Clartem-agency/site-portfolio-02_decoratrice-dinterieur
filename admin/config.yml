@@ -2,171 +2,156 @@ backend:
   name: git-gateway
   branch: main
 
-media_folder: "assets/uploads"
-public_folder: "/assets/uploads"
+media_folder: "assets"
+public_folder: "/assets"
 
 collections:
-  - name: "settings"
-    label: "Paramètres du site"
+  - name: "pages"
+    label: "Contenu de la Page"
     files:
       - file: "content.json"
-        label: "Contenu du site"
-        name: "content"
+        label: "Page d'Accueil"
+        name: "home"
         fields:
-          - label: "Métadonnées"
-            name: "meta"
-            widget: "object"
-            fields:
-              - {label: "Titre de la page", name: "title", widget: "string"}
-              - {label: "Description", name: "description", widget: "text"}
-
-          - label: "En-tête"
-            name: "header"
-            widget: "object"
-            fields:
-              - {label: "Logo", name: "logo", widget: "image"}
-              - {label: "Texte alternatif du logo", name: "logoAlt", widget: "string"}
-              - label: "Navigation"
-                name: "nav"
-                widget: "object"
-                fields:
-                  - {label: "Réalisations", name: "realisations", widget: "string"}
-                  - {label: "Services", name: "services", widget: "string"}
-                  - {label: "À propos", name: "about", widget: "string"}
-                  - {label: "FAQ", name: "faq", widget: "string"}
-                  - {label: "Bouton CTA", name: "cta", widget: "string"}
-
-          - label: "Section Hero"
-            name: "hero"
-            widget: "object"
-            fields:
-              - {label: "Image de fond", name: "image", widget: "image"}
-              - {label: "Texte alternatif de l'image", name: "imageAlt", widget: "string"}
-              - {label: "Titre principal", name: "title", widget: "text", hint: "Vous pouvez utiliser du HTML pour la mise en forme"}
-              - {label: "Sous-titre", name: "subtitle", widget: "text"}
-              - {label: "Bouton principal", name: "ctaPrimary", widget: "string"}
-              - {label: "Bouton secondaire", name: "ctaSecondary", widget: "string"}
-
-          - label: "Section Réalisations"
-            name: "realisations"
-            widget: "object"
-            fields:
-              - {label: "Titre de la section", name: "title", widget: "string", hint: "Utilisez <span class=\"text-primary\">texte</span> pour la couleur verte"}
-              - label: "Liste des réalisations"
-                name: "items"
-                widget: "list"
-                fields:
-                  - {label: "Image", name: "image", widget: "image"}
-                  - {label: "Texte alternatif", name: "alt", widget: "string"}
-                  - {label: "Titre", name: "title", widget: "string"}
-
-          - label: "Section Services"
-            name: "services"
-            widget: "object"
-            fields:
-              - {label: "Titre de la section", name: "title", widget: "string", hint: "Utilisez <span class=\"text-primary\">texte</span> pour la couleur verte"}
-              - label: "Liste des services"
-                name: "items"
-                widget: "list"
-                fields:
-                  - {label: "Icône SVG", name: "icon", widget: "text", hint: "Code SVG complet"}
-                  - {label: "Titre", name: "title", widget: "string"}
-                  - {label: "Description", name: "description", widget: "text"}
-                  - {label: "Prix", name: "price", widget: "string"}
-                  - {label: "Style du badge prix", name: "priceStyle", widget: "string", required: false, hint: "Classes CSS pour le badge"}
-                  - {label: "Texte du bouton", name: "cta", widget: "string"}
-                  - {label: "Service populaire", name: "popular", widget: "boolean", default: false}
-                  - {label: "Badge populaire", name: "badge", widget: "string", required: false, default: "Populaire"}
-
-          - label: "Section À propos"
-            name: "about"
-            widget: "object"
-            fields:
-              - {label: "Titre", name: "title", widget: "string", hint: "Utilisez <span class=\"text-primary\">texte</span> pour la couleur verte"}
-              - label: "Paragraphes"
-                name: "paragraphs"
-                widget: "list"
-                field: {label: "Paragraphe", name: "paragraph", widget: "text"}
-              - {label: "Image", name: "image", widget: "image"}
-              - {label: "Texte alternatif de l'image", name: "imageAlt", widget: "string"}
-              - {label: "Bouton principal", name: "ctaPrimary", widget: "string"}
-              - {label: "Bouton secondaire", name: "ctaSecondary", widget: "string"}
-
-          - label: "Section Témoignages"
-            name: "testimonials"
-            widget: "object"
-            fields:
-              - {label: "Titre", name: "title", widget: "string", hint: "Utilisez <span class=\"text-primary\">texte</span> pour la couleur verte"}
-              - label: "Liste des témoignages"
-                name: "items"
-                widget: "list"
-                fields:
-                  - {label: "Avatar", name: "avatar", widget: "image"}
-                  - {label: "Citation", name: "quote", widget: "text"}
-                  - {label: "Nom", name: "name", widget: "string"}
-                  - {label: "Localisation", name: "location", widget: "string"}
-
-          - label: "Section FAQ"
-            name: "faq"
-            widget: "object"
-            fields:
-              - {label: "Titre", name: "title", widget: "string", hint: "Utilisez <span class=\"text-primary\">texte</span> pour la couleur verte"}
-              - label: "Liste des questions"
-                name: "items"
-                widget: "list"
-                fields:
-                  - {label: "Question", name: "question", widget: "string"}
-                  - {label: "Réponse", name: "answer", widget: "markdown", hint: "Vous pouvez utiliser du HTML"}
-              - {label: "Texte avant le bouton", name: "ctaText", widget: "string"}
-              - {label: "Texte du bouton", name: "ctaButton", widget: "string"}
-
-          - label: "Section Contact"
-            name: "contact"
-            widget: "object"
-            fields:
-              - {label: "Titre", name: "title", widget: "string", hint: "Utilisez <span class=\"text-primary\">texte</span> pour la couleur verte"}
-              - {label: "Sous-titre", name: "subtitle", widget: "text"}
-              - {label: "Portrait", name: "portrait", widget: "image"}
-              - {label: "Nom", name: "name", widget: "string"}
-              - {label: "Titre de la réunion", name: "meetingTitle", widget: "string"}
-              - {label: "Durée", name: "duration", widget: "string"}
-              - {label: "Format", name: "format", widget: "string"}
-              - {label: "Description", name: "description", widget: "text"}
-              - {label: "Titre du calendrier", name: "calendarTitle", widget: "string"}
-              - {label: "Mois affiché", name: "calendarMonth", widget: "string"}
-              - {label: "Date sélectionnée", name: "selectedDate", widget: "string"}
-              - label: "Créneaux horaires"
-                name: "timeSlots"
-                widget: "list"
-                field: {label: "Créneau", name: "slot", widget: "string"}
-
-          - label: "Pied de page"
-            name: "footer"
-            widget: "object"
-            fields:
-              - {label: "Logo", name: "logo", widget: "image"}
-              - {label: "Texte alternatif du logo", name: "logoAlt", widget: "string"}
-              - {label: "Nom de la marque", name: "brand", widget: "string"}
-              - {label: "Description", name: "description", widget: "text"}
-              - label: "Réseaux sociaux"
-                name: "social"
-                widget: "list"
-                fields:
-                  - {label: "Nom", name: "name", widget: "string"}
-                  - {label: "URL", name: "url", widget: "string"}
-                  - {label: "Icône SVG", name: "icon", widget: "text"}
-              - label: "Navigation"
-                name: "navigation"
-                widget: "list"
-                fields:
-                  - {label: "Libellé", name: "label", widget: "string"}
-                  - {label: "URL", name: "url", widget: "string"}
-              - {label: "Titre de la section contact", name: "contactTitle", widget: "string"}
-              - label: "Informations de contact"
-                name: "contactInfo"
-                widget: "list"
-                fields:
-                  - {label: "Texte", name: "text", widget: "string"}
-                  - {label: "URL", name: "url", widget: "string", required: false}
-              - {label: "Copyright", name: "copyright", widget: "string", hint: "Utilisez <span id=\"year\"></span> pour l'année automatique"}
-              - {label: "Texte retour en haut", name: "backToTop", widget: "string"}
+          - { label: "Métadonnées (SEO)", name: "meta", widget: "object", fields: [
+              { label: "Titre de la page", name: "title", widget: "string" },
+              { label: "Description de la page", name: "description", widget: "text" },
+              { label: "Favicon 32x32", name: "favicon_32", widget: "image" },
+              { label: "Favicon 192x192", name: "favicon_192", widget: "image" },
+              { label: "Icône Apple Touch", name: "apple_touch_icon", widget: "image" },
+              { label: "Couleur du thème (ex: #ffffff)", name: "theme_color", widget: "string" }
+            ]}
+          - { label: "En-tête", name: "header", widget: "object", fields: [
+              { label: "Logo", name: "logo", widget: "object", fields: [
+                  { label: "Fichier image", name: "src", widget: "image" },
+                  { label: "Texte alternatif", name: "alt", widget: "string" },
+                  { label: "Texte pour lecteur d'écran", name: "sr_text", widget: "string" }
+                ]},
+              { label: "Liens de navigation", name: "nav_links", widget: "list", fields: [
+                  { label: "Texte", name: "text", widget: "string" },
+                  { label: "Lien (ex: #services)", name: "href", widget: "string" }
+                ]},
+              { label: "Bouton d'action (CTA)", name: "cta", widget: "object", fields: [
+                  { label: "Texte", name: "text", widget: "string" },
+                  { label: "Lien", name: "href", widget: "string" }
+                ]}
+            ]}
+          - { label: "Section Héros", name: "hero", widget: "object", fields: [
+              { label: "Image de fond", name: "background_image", widget: "object", fields: [
+                  { label: "Fichier image", name: "src", widget: "image" },
+                  { label: "Texte alternatif", name: "alt", widget: "string" }
+                ]},
+              { label: "Titre principal", name: "title", widget: "markdown", hint: "Utilisez <span>...</span> pour le texte en couleur." },
+              { label: "Sous-titre", name: "subtitle", widget: "text" },
+              { label: "Bouton d'action principal", name: "cta_primary", widget: "object", fields: [
+                  { label: "Texte", name: "text", widget: "string" },
+                  { label: "Lien", name: "href", widget: "string" }
+                ]},
+              { label: "Bouton d'action secondaire", name: "cta_secondary", widget: "object", fields: [
+                  { label: "Texte", name: "text", widget: "string" },
+                  { label: "Lien", name: "href", widget: "string" }
+                ]}
+            ]}
+          - { label: "Section Réalisations", name: "realisations", widget: "object", fields: [
+              { label: "Titre", name: "title", widget: "markdown" },
+              { label: "Projets", name: "projects", widget: "list", fields: [
+                  { label: "Image", name: "image", widget: "image" },
+                  { label: "Légende", name: "caption", widget: "string" }
+                ]}
+            ]}
+          - { label: "Section Services", name: "services", widget: "object", fields: [
+              { label: "Titre", name: "title", widget: "markdown" },
+              { label: "Cartes de service", name: "cards", widget: "list", fields: [
+                  { label: "Est-ce la formule populaire ?", name: "is_popular", widget: "boolean", default: false },
+                  { label: "Titre", name: "title", widget: "string" },
+                  { label: "Description", name: "description", widget: "text" },
+                  { label: "Texte du badge (prix, etc.)", name: "tag_text", widget: "string" },
+                  { label: "Classes CSS du badge", name: "tag_class", widget: "string", hint: "Classes Tailwind pour le style du badge." },
+                  { label: "Lien", name: "link", widget: "object", fields: [
+                      { label: "Texte du lien", name: "text", widget: "string" },
+                      { label: "URL du lien", name: "href", widget: "string" }
+                    ]}
+                ]}
+            ]}
+          - { label: "Section À Propos", name: "about", widget: "object", fields: [
+              { label: "Titre", name: "title", widget: "markdown" },
+              { label: "Texte", name: "text", widget: "markdown" },
+              { label: "Image portrait", name: "image", widget: "object", fields: [
+                  { label: "Fichier image", name: "src", widget: "image" },
+                  { label: "Texte alternatif", name: "alt", widget: "string" }
+                ]},
+              { label: "Bouton d'action principal", name: "cta_primary", widget: "object", fields: [
+                  { label: "Texte", name: "text", widget: "string" },
+                  { label: "Lien", name: "href", widget: "string" }
+                ]},
+              { label: "Bouton d'action secondaire", name: "cta_secondary", widget: "object", fields: [
+                  { label: "Texte", name: "text", widget: "string" },
+                  { label: "Lien", name: "href", widget: "string" }
+                ]}
+            ]}
+          - { label: "Section Témoignages", name: "testimonials", widget: "object", fields: [
+              { label: "Titre", name: "title", widget: "markdown" },
+              { label: "Témoignages", name: "slides", widget: "list", fields: [
+                  { label: "Citation", name: "quote", widget: "text" },
+                  { label: "Auteur", name: "author", widget: "object", fields: [
+                      { label: "Photo", name: "image", widget: "image" },
+                      { label: "Texte alternatif photo", name: "alt", widget: "string" },
+                      { label: "Nom et information", name: "info", widget: "string" }
+                    ]}
+                ]}
+            ]}
+          - { label: "Section FAQ", name: "faq", widget: "object", fields: [
+              { label: "Titre", name: "title", widget: "markdown" },
+              { label: "Questions / Réponses", name: "items", widget: "list", fields: [
+                  { label: "Question", name: "question", widget: "string" },
+                  { label: "Réponse", name: "answer", widget: "markdown" }
+                ]},
+              { label: "Appel à l'action (bas de section)", name: "cta", widget: "object", fields: [
+                  { label: "Texte d'introduction", name: "text", widget: "string" },
+                  { label: "Texte du bouton", name: "button_text", widget: "string" },
+                  { label: "Lien du bouton", name: "button_href", widget: "string" }
+                ]}
+            ]}
+          - { label: "Section Contact", name: "contact", widget: "object", fields: [
+              { label: "Titre", name: "title", widget: "markdown" },
+              { label: "Sous-titre", name: "subtitle", widget: "text" },
+              { label: "Carte de contact (gauche)", name: "card", widget: "object", fields: [
+                  { label: "Image portrait", name: "image", widget: "object", fields: [
+                      { label: "Fichier image", name: "src", widget: "image" },
+                      { label: "Texte alternatif", name: "alt", widget: "string" }
+                    ]},
+                  { label: "Nom", name: "name", widget: "string" },
+                  { label: "Titre du RDV", name: "meeting_title", widget: "string" },
+                  { label: "Durée", name: "duration", widget: "string" },
+                  { label: "Type (ex: Appel Vidéo)", name: "type", widget: "string" },
+                  { label: "Description", name: "description", widget: "text" }
+                ]},
+              { label: "Calendrier (démo)", name: "calendar", widget: "object", fields: [
+                  { label: "Mois et année", name: "month_year", widget: "string" },
+                  { label: "Titre du jour sélectionné", name: "selected_day_title", widget: "string" },
+                  { label: "Horaires disponibles", name: "available_times", widget: "list", field: { label: "Heure", name: "time", widget: "string" } }
+                ]}
+            ]}
+          - { label: "Pied de page", name: "footer", widget: "object", fields: [
+              { label: "Logo", name: "logo", widget: "object", fields: [
+                  { label: "Fichier image", name: "src", widget: "image" },
+                  { label: "Texte alternatif", name: "alt", widget: "string" }
+                ]},
+              { label: "Nom de la marque", name: "brand_name", widget: "string" },
+              { label: "Description", name: "description", widget: "text" },
+              { label: "Réseaux sociaux", name: "social_links", widget: "list", fields: [
+                  { label: "Label (Instagram ou Pinterest)", name: "label", widget: "string" },
+                  { label: "Lien", name: "href", widget: "string" }
+                ]},
+              { label: "Liens de navigation", name: "nav_links", widget: "list", fields: [
+                  { label: "Texte", name: "text", widget: "string" },
+                  { label: "Lien", name: "href", widget: "string" }
+                ]},
+              { label: "Informations de contact", name: "contact_info", widget: "list", fields: [
+                  { label: "Texte", name: "text", widget: "string" },
+                  { label: "Lien (ex: tel:..., mailto:...)", name: "href", widget: "string" },
+                  { label: "Est-ce un lien cliquable ?", name: "is_link", widget: "boolean", default: false }
+                ]},
+              { label: "Texte du copyright", name: "copyright", widget: "string", hint: "Utilisez {year} pour l'année en cours." },
+              { label: "Texte du lien 'Remonter'", name: "back_to_top_text", widget: "string" }
+            ]}
